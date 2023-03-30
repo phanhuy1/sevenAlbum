@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/list_album_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <include
+        layout="@layout/list_album_appbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:layout_weight="-1"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="25dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                app:iconTint="@color/black"
+                app:backgroundTint="#97DEFF"
+                app:icon="@drawable/baseline_photo_library_24"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVideo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:layout_weight="-1"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="25dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                app:iconTint="@color/black"
+                app:backgroundTint="#97DEFF"
+                app:icon="@drawable/baseline_movie_24"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFavo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:layout_weight="-1"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="25dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                app:iconTint="@color/black"
+                app:backgroundTint="#97DEFF"
+                app:icon="@drawable/baseline_star_24"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLock"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:layout_weight="-1"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="25dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                app:iconTint="@color/black"
+                app:backgroundTint="#97DEFF"
+                app:icon="@drawable/baseline_lock_24"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
