@@ -25,8 +25,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
-import com.example.sevenalbum.utility.BCrypt;
-import com.example.sevenalbum.utility.FileUtility;
+import com.example.sevenalbum.utils.BCrypt;
+import com.example.sevenalbum.utils.FileUtility;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.textfield.TextInputLayout;
 
