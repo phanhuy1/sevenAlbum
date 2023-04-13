@@ -30,8 +30,8 @@ import com.example.sevenalbum.models.Album;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.testgallery.models.Image;
-import com.example.testgallery.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.models.Image;
+import com.example.sevenalbum.utils.GetAllPhotoFromGallery;
 
 
 public class AlbumFragment extends Fragment {
