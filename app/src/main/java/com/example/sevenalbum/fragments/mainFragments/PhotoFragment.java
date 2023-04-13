@@ -58,7 +58,7 @@ import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
 import com.example.sevenalbum.activities.subActivities.MultiSelectImage;
 import com.example.sevenalbum.activities.mainActivities.SettingsActivity;
 import com.example.sevenalbum.ml.MobilenetV110224Quant;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utils.GetAllPhotoFromGallery;
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.models.Category;
 import com.example.sevenalbum.adapters.CategoryAdapter;

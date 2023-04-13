@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.models.SearchRV;
-import com.example.sevenalbum.utility.IClickListener;
+import com.example.sevenalbum.utils.IClickListener;
+import com.example.sevenalbum.utils.IClickListener;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,7 @@ public class SearchRVAdapter extends RecyclerView.Adapter<SearchRVAdapter.ViewHo
         this.searchRVModals = dataModalArrayList;
         this.context = context;
     }
+
 
     @NonNull
     @Override
