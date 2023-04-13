@@ -18,7 +18,7 @@ import com.example.sevenalbum.activities.mainActivities.PictureActivity;
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.models.Category;
 import com.example.sevenalbum.models.Image;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utils.GetAllPhotoFromGallery;
 
 import java.util.ArrayList;
 import java.util.List;

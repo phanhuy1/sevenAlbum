@@ -21,8 +21,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.app.UiModeManager;
 
-import com.example.testgallery.R;
-import com.example.testgallery.fragments.mainFragments.SettingsFragment;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.fragments.mainFragments.SettingsFragment;
 
 import java.util.Locale;
 
