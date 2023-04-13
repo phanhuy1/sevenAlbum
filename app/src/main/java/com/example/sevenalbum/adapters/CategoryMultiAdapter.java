@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.subActivities.MultiSelectImage;
 import com.example.sevenalbum.models.Category;
 import com.example.sevenalbum.utility.ListTransInterface;
 
@@ -24,7 +25,7 @@ public class CategoryMultiAdapter extends RecyclerView.Adapter<CategoryMultiAdap
     public CategoryMultiAdapter(Context context) {
         this.context = context;
     }
-    public void setListTransInterface(ListTransInterface listTransInterface) {
+    public void setListTransInterface(MultiSelectImage listTransInterface) {
         this.listTransInterface = listTransInterface;
     }
     public void setData(List<Category> listCategory){

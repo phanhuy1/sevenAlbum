@@ -7,13 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.subActivities.ItemAlbumMultiSelectActivity;
 import com.example.sevenalbum.models.Category;
 import com.example.sevenalbum.models.Image;
 import com.example.sevenalbum.utility.ListTransInterface;
@@ -34,7 +34,7 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
         this.context = context;
     }
 
-    public void setListTransInterface(ListTransInterface listTransInterface) {
+    public void setListTransInterface(ItemAlbumMultiSelectActivity listTransInterface) {
         this.listTransInterface = listTransInterface;
     }
 

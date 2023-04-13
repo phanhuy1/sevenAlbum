@@ -1,13 +1,10 @@
 package com.example.sevenalbum.adapters;
 
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,15 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.sevenalbum.R;
-import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
-import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
+import com.example.sevenalbum.activities.subActivities.ItemAlbumMultiSelectActivity;
 import com.example.sevenalbum.models.Album;
 import com.example.sevenalbum.utility.PictureInterface;
 import com.example.sevenalbum.utility.SubInterface;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 
 public class AlbumSheetAdapter extends RecyclerView.Adapter<AlbumSheetAdapter.AlbumViewHolder> {
@@ -35,7 +28,7 @@ public class AlbumSheetAdapter extends RecyclerView.Adapter<AlbumSheetAdapter.Al
         this.context = context;
     }
 
-    public void setSubInterface(SubInterface subInterface) {
+    public void setSubInterface(ItemAlbumMultiSelectActivity subInterface) {
         this.subInterface = subInterface;
     }
 

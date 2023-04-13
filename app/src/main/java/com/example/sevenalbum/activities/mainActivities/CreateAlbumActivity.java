@@ -25,8 +25,8 @@ import com.example.sevenalbum.adapters.ImageAdapter;
 import com.example.sevenalbum.adapters.ImageSelectAdapter;
 import com.example.sevenalbum.adapters.SlideShowAdapter;
 import com.example.sevenalbum.models.Image;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
-import com.example.sevenalbum.utility.ListTransInterface;
+import com.example.sevenalbum.utils.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utils.ListTransInterface;
 
 import java.io.File;
 import java.io.IOException;

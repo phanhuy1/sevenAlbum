@@ -16,14 +16,14 @@ buildscript {
 
 allprojects {
     repositories {
-        //jcenter()
-//        maven { url "https://www.jitpack.io" }
-//        mavenCentral()
-//        google() // Google's Maven repository
-//        flatDir {
-//            dirs 'libs'
-//        }
-//        jcenter()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+        mavenCentral()
+        google() // Google's Maven repository
+        flatDir {
+            dirs 'libs'
+        }
+        jcenter()
     }
 }
 
