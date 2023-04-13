@@ -31,6 +31,6 @@ menu list_album_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
-style Theme.SevenAlbum
+style Theme.sevenalbum
 xml backup_rules
 xml data_extraction_rules

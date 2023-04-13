@@ -1952,6 +1952,7 @@ drawable abc_vector_test
 drawable anh1
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_camera_24
 drawable baseline_lock_24
 drawable baseline_movie_24
 drawable baseline_photo_library_24
@@ -3302,6 +3303,7 @@ menu menu_top_multi_secret
 menu menu_top_picture
 menu menu_top_settings
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -4054,7 +4056,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
-style Theme_TestGallery
+style Theme_sevenalbum
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

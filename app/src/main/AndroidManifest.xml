@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:configChanges="locale"
 
-        android:theme="@style/Theme.TestGallery">
+        android:theme="@style/Theme.sevenalbum">
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ica" />

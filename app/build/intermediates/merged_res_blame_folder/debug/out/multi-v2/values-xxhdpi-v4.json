@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "outputFile": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gohuy\\.gradle\\caches\\transforms-3\\23dfd3263aa47bda1463f55362db1225\\transformed\\jetified-ds-photo-editor-sdk-v10\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "source": "/Users/huytruong/.gradle/caches/transforms-3/23dfd3263aa47bda1463f55362db1225/transformed/jetified-ds-photo-editor-sdk-v10/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
