@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_add_image_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_add_image_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_model.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_model.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\anim_anim_layout_ryc_3.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\anim\\anim_layout_ryc_3.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_slide_show.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_slide_show.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_secret.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_secret.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_picture_album_span2.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_picture_album_span2.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_dev.jpg.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\dev.jpg"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_bottom_nav.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_bottom_nav.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\xml_setting.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\xml\\setting.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_photo_library_24.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\baseline_photo_library_24.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_tick.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_tick.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_list_album_appbar.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\list_album_appbar.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_delete.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_multi_select.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_multi_select.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_star.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_star.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_dev.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_dev.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_item_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_item_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_camera.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_secret_changepass.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_secret_changepass.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_effect_slide.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_effect_slide.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_picture_album_linear.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_picture_album_linear.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_favor.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_favor.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_settings.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_settings.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_share.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_share.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_bottom_sheet_add_to_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_bottom_sheet_add_to_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_toolbar.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_info.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_info.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_size.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_size.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\anim_anim_layout_ryc_2.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\anim\\anim_layout_ryc_2.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_search_result.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_search_result.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_bottom_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_bottom_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_secret_forgotpass.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_secret_forgotpass.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_user.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_user.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_slide_show.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_slide_show.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_share.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_share.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_change_span_count.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_change_span_count.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\color_custom_color_bottom_nav.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\color\\custom_color_bottom_nav.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_multi_select_image.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_multi_select_image.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_star_red.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_star_red.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_movie_24.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\baseline_movie_24.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_anh1.jpg.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\anh1.jpg"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_create_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_create_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_multi_secret.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_multi_secret.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_dialog_search_advanced.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_dialog_search_advanced.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_search_24.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\baseline_search_24.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_toolbar_camera.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_toolbar_camera.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_slide_show.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_slide_show.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_list_album_layout.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\list_album_layout.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_favorite.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_favorite.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_add_photos.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_add_photos.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_albums.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_albums.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_exposure.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_exposure.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_picture_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_picture_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_back.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_category.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_category.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\anim_anim_layout_ryc_1.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\anim\\anim_layout_ryc_1.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_bottom_sheet_search.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_bottom_sheet_search.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_new_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_new_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_list_album_menu.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\list_album_menu.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_bottom_sheet_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\layout_bottom_sheet_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\xml_file_paths.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_toolbar_info.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_toolbar_info.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_focal_length.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_focal_length.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_star_24.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\baseline_star_24.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_settings.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\anim_anim_close_fragment.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\anim\\anim_close_fragment.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_item_slide_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\item_slide_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_album_secret.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_album_secret.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_photo.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_photo.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_favorite.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\fragment_favorite.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_picture.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_picture.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_baseline_lock_24.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\baseline_lock_24.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_bottom_sheet_background.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable-v24\\bottom_sheet_background.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_photos.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_photos.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_gallery.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_gallery.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\anim_anim_open_fragment.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\anim\\anim_open_fragment.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_gif_show.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\layout\\activity_gif_show.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_search.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_multi_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_multi_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_save.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_save.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_edit.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_delete_list_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_delete_list_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_logo_photo.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_logo_photo.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\menu_menu_top_item_album.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\menu\\menu_top_item_album.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_info_time.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_info_time.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Projects\\7Album\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_secret.xml.flat",
+        "source": "D:\\Desktop\\Projects\\7Album\\app\\src\\main\\res\\drawable\\ic_secret.xml"
+    }
+]

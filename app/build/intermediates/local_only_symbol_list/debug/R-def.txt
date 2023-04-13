@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable baseline_lock_24
+drawable baseline_more_vert_24
+drawable baseline_movie_24
+drawable baseline_photo_library_24
+drawable baseline_search_24
+drawable baseline_star_24
+drawable circle_btn_photo
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id albumRecylerView
+id btnFavo
+id btnImage
+id btnLock
+id btnVideo
+id ic_search
+id list_album_bar
+id list_album_layout
+layout activity_main
+layout list_album_appbar
+layout list_album_layout
+menu list_album_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.SevenAlbum
+xml backup_rules
+xml data_extraction_rules
