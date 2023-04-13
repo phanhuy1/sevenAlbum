@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Seven Album</string>
+    <string name="app_name">Simple Gallery</string>
     <string name="picture">Photo</string>
     <string name="search">Search</string>
     <string name="share">Share</string>

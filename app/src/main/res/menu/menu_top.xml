@@ -3,7 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <!--    <item android:id="@+id/menuSearch"-->
+    <item
+        android:id="@+id/menuCamera"
+        android:title="@string/camera"
+        android:icon="@drawable/ic_toolbar_camera"
+        app:showAsAction="always"
+        android:iconTint="?attr/colorOnBackground"/>
+
+<!--    <item android:id="@+id/menuSearch"-->
 <!--        android:title="@string/search"-->
 <!--        android:icon="@drawable/ic_search"-->
 <!--        app:showAsAction="ifRoom|collapseActionView"-->
@@ -18,6 +25,10 @@
 
     <item android:id="@+id/menuChoose"
         android:title="@string/multiSelect"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menuSearch_Advanced"
+        android:title="@string/advance_search"
         app:showAsAction="never"/>
 
     <item android:id="@+id/menuSettings"

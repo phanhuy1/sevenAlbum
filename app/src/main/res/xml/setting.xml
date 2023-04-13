@@ -32,21 +32,21 @@
             android:key="sourceCode"
             android:title="@string/source_code">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://github.com/phanhuy1/sevenAlbum"/>
+                android:data="https://github.com/Ashpex/SimpleGallery"/>
         </Preference>
 
         <Preference
             android:key="contributors"
             android:title="@string/contributors">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://github.com/phanhuy1/sevenAlbum"/>
+                android:data="https://github.com/Ashpex/SimpleGallery"/>
         </Preference>
 
         <Preference
             android:key="libraries"
             android:title="@string/libraries">
             <intent android:action="android.intent.action.VIEW"
-                android:data="https://github.com/phanhuy1/sevenalbum/blob/master/Included_libraries.md"/>
+                android:data="https://github.com/Ashpex/SimpleGallery/blob/master/Included_libraries.md"/>
         </Preference>
 
     </PreferenceCategory>
