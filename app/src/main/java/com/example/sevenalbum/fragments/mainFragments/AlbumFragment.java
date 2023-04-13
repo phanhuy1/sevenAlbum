@@ -22,10 +22,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testgallery.activities.mainActivities.CreateAlbumActivity;
-import com.example.testgallery.R;
-import com.example.testgallery.adapters.AlbumAdapter;
-import com.example.testgallery.models.Album;
+import com.example.sevenalbum.activities.mainActivities.CreateAlbumActivity;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.adapters.AlbumAdapter;
+import com.example.sevenalbum.models.Album;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -15,7 +15,7 @@ import android.preference.Preference;
 import android.preference.SwitchPreference;
 import android.util.Log;
 
-import com.example.testgallery.R;
+import com.example.sevenalbum.R;
 
 import java.util.Locale;
 

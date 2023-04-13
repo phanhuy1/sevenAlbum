@@ -15,9 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.testgallery.R;
-import com.example.testgallery.utility.BCrypt;
-import com.example.testgallery.utility.FileUtility;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.utils.BCrypt;
+import com.example.sevenalbum.utils.FileUtility;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 

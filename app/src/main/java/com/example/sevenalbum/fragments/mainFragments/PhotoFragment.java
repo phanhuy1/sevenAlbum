@@ -54,15 +54,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.example.testgallery.activities.mainActivities.ItemAlbumActivity;
-import com.example.testgallery.activities.subActivities.MultiSelectImage;
-import com.example.testgallery.activities.mainActivities.SettingsActivity;
-import com.example.testgallery.ml.MobilenetV110224Quant;
-import com.example.testgallery.utility.GetAllPhotoFromGallery;
-import com.example.testgallery.R;
-import com.example.testgallery.models.Category;
-import com.example.testgallery.adapters.CategoryAdapter;
-import com.example.testgallery.models.Image;
+import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
+import com.example.sevenalbum.activities.subActivities.MultiSelectImage;
+import com.example.sevenalbum.activities.mainActivities.SettingsActivity;
+import com.example.sevenalbum.ml.MobilenetV110224Quant;
+import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.models.Category;
+import com.example.sevenalbum.adapters.CategoryAdapter;
+import com.example.sevenalbum.models.Image;
 
 import org.checkerframework.checker.units.qual.C;
 import org.tensorflow.lite.DataType;

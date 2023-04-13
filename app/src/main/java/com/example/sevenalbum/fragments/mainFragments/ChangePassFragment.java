@@ -15,9 +15,9 @@ import androidx.dynamicanimation.animation.SpringAnimation;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
-import com.example.testgallery.R;
-import com.example.testgallery.utility.BCrypt;
-import com.example.testgallery.utility.FileUtility;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.utility.BCrypt;
+import com.example.sevenalbum.utility.FileUtility;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.io.FileNotFoundException;

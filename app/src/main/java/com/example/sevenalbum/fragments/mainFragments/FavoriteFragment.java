@@ -21,16 +21,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testgallery.R;
-import com.example.testgallery.activities.mainActivities.ItemAlbumActivity;
-import com.example.testgallery.activities.mainActivities.SlideShowActivity;
-import com.example.testgallery.activities.mainActivities.data_favor.DataLocalManager;
-import com.example.testgallery.adapters.CategoryAdapter;
-import com.example.testgallery.adapters.ItemAlbumAdapter;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
+import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.adapters.CategoryAdapter;
+import com.example.sevenalbum.adapters.ItemAlbumAdapter;
 
-import com.example.testgallery.models.Category;
-import com.example.testgallery.models.Image;
-import com.example.testgallery.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.models.Category;
+import com.example.sevenalbum.models.Image;
+import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 
 
 import java.io.File;

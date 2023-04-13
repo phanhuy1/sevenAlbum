@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testgallery.R;
-import com.example.testgallery.adapters.SearchRVAdapter;
-import com.example.testgallery.models.SearchRV;
-import com.example.testgallery.utility.IClickListener;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.adapters.SearchRVAdapter;
+import com.example.sevenalbum.models.SearchRV;
+import com.example.sevenalbum.utils.IClickListener;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
