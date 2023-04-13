@@ -429,7 +429,7 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
             else{
                 for(int i=0;i<listImageSelected.size();i++) {
                     Image img = listImageSelected.get(i);
-                    Fileutils fu = new Fileutils();
+                    FileUtility fu = new FileUtility();
                     File imgFile = new File(img.getPath());
                     list.add(img.getPath());
                     fu.moveFile(img.getPath(), imgFile.getName(), scrPath);

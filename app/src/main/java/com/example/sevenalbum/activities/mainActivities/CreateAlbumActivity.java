@@ -19,14 +19,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.testgallery.R;
-import com.example.testgallery.activities.mainActivities.data_favor.DataLocalManager;
-import com.example.testgallery.adapters.ImageAdapter;
-import com.example.testgallery.adapters.ImageSelectAdapter;
-import com.example.testgallery.adapters.SlideShowAdapter;
-import com.example.testgallery.models.Image;
-import com.example.testgallery.utility.GetAllPhotoFromGallery;
-import com.example.testgallery.utility.ListTransInterface;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.adapters.ImageAdapter;
+import com.example.sevenalbum.adapters.ImageSelectAdapter;
+import com.example.sevenalbum.adapters.SlideShowAdapter;
+import com.example.sevenalbum.models.Image;
+import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utility.ListTransInterface;
 
 import java.io.File;
 import java.io.IOException;

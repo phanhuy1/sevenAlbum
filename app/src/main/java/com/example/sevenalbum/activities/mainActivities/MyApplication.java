@@ -2,7 +2,7 @@ package com.example.sevenalbum.activities.mainActivities;
 
 import android.app.Application;
 
-import com.example.testgallery.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 
 public class MyApplication extends Application {
     @Override

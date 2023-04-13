@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.testgallery.R;
+import com.example.sevenalbum.R;
 
 public class SplashActivity extends AppCompatActivity {
 

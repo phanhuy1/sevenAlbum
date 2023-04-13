@@ -28,15 +28,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.transition.Explode;
 import androidx.transition.Transition;
 
-import com.example.testgallery.R;
-import com.example.testgallery.activities.mainActivities.data_favor.DataLocalManager;
-import com.example.testgallery.activities.subActivities.ItemAlbumMultiSelectActivity;
-import com.example.testgallery.activities.subActivities.ItemSecretMultiSelectActivity;
-import com.example.testgallery.activities.subActivities.MultiSelectImage;
-import com.example.testgallery.adapters.ItemAlbumAdapter;
-import com.example.testgallery.adapters.ItemAlbumAdapter2;
-import com.example.testgallery.adapters.ItemAlbumAdapter3;
-import com.example.testgallery.models.Image;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.activities.subActivities.ItemAlbumMultiSelectActivity;
+import com.example.sevenalbum.activities.subActivities.ItemSecretMultiSelectActivity;
+import com.example.sevenalbum.activities.subActivities.MultiSelectImage;
+import com.example.sevenalbum.adapters.ItemAlbumAdapter;
+import com.example.sevenalbum.adapters.ItemAlbumAdapter2;
+import com.example.sevenalbum.adapters.ItemAlbumAdapter3;
+import com.example.sevenalbum.models.Image;
 
 
 import java.io.File;

@@ -12,10 +12,10 @@ import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ImageView;
 
-import com.example.testgallery.R;
-import com.example.testgallery.adapters.SlideShowAdapter;
-import com.example.testgallery.models.Image;
-import com.example.testgallery.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.R;
+import com.example.sevenalbum.adapters.SlideShowAdapter;
+import com.example.sevenalbum.models.Image;
+import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
