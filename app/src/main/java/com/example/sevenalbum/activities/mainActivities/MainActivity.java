@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 import androidx.viewpager2.widget.ViewPager2;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.adapters.ViewPagerAdapter;
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
         // Hide status bar
 
         /*getSupportActionBar();*/
@@ -44,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         };
         permission.checkAndRequestPermissions(this);
         setUpViewPager();
-        loadSettings(); // doesn't work?
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -126,12 +128,5 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         permission.checkResult(requestCode, permissions, grantResults);
     }
-
-
-    private void loadSettings(){
-        PreferenceManager.setDefaultValues(this, R.xml.setting, false);
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-    }
-
 
 }

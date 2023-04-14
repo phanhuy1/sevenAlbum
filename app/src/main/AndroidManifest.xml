@@ -60,10 +60,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.sevenalbum.activities.mainActivities.SettingsActivity"
-            android:exported="true"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.example.sevenalbum.activities.mainActivities.AddImageToAlbumActivity"
             android:exported="true"
             android:screenOrientation="portrait" />

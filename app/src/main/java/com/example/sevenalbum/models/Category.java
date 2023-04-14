@@ -14,11 +14,11 @@ public class Category {
         this.nameCategory = nameCategory;
     }
 
-    public List<Image> getListGirl() {
+    public List<Image> getListImage() {
         return listImage;
     }
 
-    public void setListGirl(List<Image> listImage) {
+    public void setListImage(List<Image> listImage) {
         this.listImage = listImage;
     }
 

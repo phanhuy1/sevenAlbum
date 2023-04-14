@@ -114,7 +114,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             listPath = new ArrayList<>();
             listThumb = new ArrayList<>();
             for(int i = 0;i<listCategory.size();i++) {
-                List<Image> listGirl = listCategory.get(i).getListGirl();
+                List<Image> listGirl = listCategory.get(i).getListImage();
                 for (int j = 0; j < listGirl.size(); j++) {
                     listPath.add(listGirl.get(j).getPath());
                     listThumb.add(listGirl.get(j).getThumb());

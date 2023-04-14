@@ -50,7 +50,6 @@ import java.util.Set;
 
 import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
 import com.example.sevenalbum.activities.subActivities.MultiSelectImage;
-import com.example.sevenalbum.activities.mainActivities.SettingsActivity;
 import com.example.sevenalbum.ml.MobilenetV110224Quant;
 import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 import com.example.sevenalbum.R;
@@ -124,12 +123,6 @@ public class PhotoFragment extends Fragment {
                     case R.id.menuSearch:
                         eventSearch(item);
                         break;
-                    case R.id.menuCamera:
-                        takenImg();
-                        break;
-                    case R.id.menuSearch_Advanced:
-                        actionSearchAdvanced();
-                        break;
                     case R.id.duplicateImages:
                         actionDuplicateImage();
                         break;
@@ -137,9 +130,6 @@ public class PhotoFragment extends Fragment {
                         Intent intent_mul = new Intent(getContext(), MultiSelectImage.class);
                         startActivityForResult(intent_mul, REQUEST_CODE_MULTI);
                         break;
-                    case R.id.menuSettings:
-                        Intent intent = new Intent(getContext(), SettingsActivity.class);
-                        startActivity(intent);
                 }
                 return true;
             }

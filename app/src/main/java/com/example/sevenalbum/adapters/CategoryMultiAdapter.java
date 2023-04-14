@@ -52,7 +52,7 @@ public class CategoryMultiAdapter extends RecyclerView.Adapter<CategoryMultiAdap
 
         ImageSelectAdapter girlAdapter = new ImageSelectAdapter(context.getApplicationContext());
         girlAdapter.setListTransInterface(listTransInterface);
-        girlAdapter.setData(category.getListGirl());
+        girlAdapter.setData(category.getListImage());
         girlAdapter.setListCategory(listCategory);
         holder.rcvPictures.setAdapter(girlAdapter);
 
