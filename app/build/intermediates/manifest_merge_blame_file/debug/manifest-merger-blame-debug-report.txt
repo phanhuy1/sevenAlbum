@@ -6,369 +6,383 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="25"
-8-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml
-9        android:targetSdkVersion="31" />
-9-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml
+8-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:5:5-80
-11-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:5:22-77
+11-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:4:5-80
+11-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:4:22-77
 12    <uses-permission android:name="android.permission.SET_WALLPAPER" />
-12-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:6:5-72
-12-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:6:22-69
+12-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:5:5-72
+12-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:5:22-69
 13    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-13-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:7:5-81
-13-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:7:22-78
+13-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:6:5-81
+13-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:6:22-78
 14    <uses-permission
-14-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:8:5-81
+14-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:7:5-81
 15        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-15-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:8:22-78
+15-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:7:22-78
 16        android:maxSdkVersion="28" />
-16-->[:ds-photo-editor-sdk-v10:] /Users/huytruong/.gradle/caches/transforms-3/23dfd3263aa47bda1463f55362db1225/transformed/jetified-ds-photo-editor-sdk-v10/AndroidManifest.xml:14:9-35
+16-->[:ds-photo-editor-sdk-v10:] C:\Users\gohuy\.gradle\caches\transforms-3\da126081c8d2f2a90bb4b0556937d4ac\transformed\jetified-ds-photo-editor-sdk-v10\AndroidManifest.xml:14:9-35
 17    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-17-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:9:5-82
-17-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:9:22-79
+17-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:8:5-82
+17-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:8:22-79
 18    <uses-permission android:name="android.permission.STORAGE" />
-18-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:10:5-66
-18-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:10:22-63
+18-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:9:5-66
+18-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:9:22-63
 19    <uses-permission android:name="android.permission.CAMERA" />
-19-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:11:5-65
-19-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:11:22-62
+19-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:10:5-65
+19-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:10:22-62
 20    <!-- permission for internet -->
 21    <uses-permission
-21-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:13:5-14:34
+21-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:12:5-13:34
 22        android:name="android.permission.INTERNET"
-22-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:13:22-64
+22-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:12:22-64
 23        android:required="true" />
-23-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:14:9-32
+23-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:13:9-32
 24
 25    <uses-feature
-25-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:15:5-17:36
+25-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:14:5-16:36
 26        android:name="android.hardware.camera"
-26-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:16:9-47
+26-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:15:9-47
 27        android:required="false" />
-27-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:17:9-33
+27-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:16:9-33
 28
 29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-29-->[:ds-photo-editor-sdk-v10:] /Users/huytruong/.gradle/caches/transforms-3/23dfd3263aa47bda1463f55362db1225/transformed/jetified-ds-photo-editor-sdk-v10/AndroidManifest.xml:15:5-79
-29-->[:ds-photo-editor-sdk-v10:] /Users/huytruong/.gradle/caches/transforms-3/23dfd3263aa47bda1463f55362db1225/transformed/jetified-ds-photo-editor-sdk-v10/AndroidManifest.xml:15:22-76
+29-->[:ds-photo-editor-sdk-v10:] C:\Users\gohuy\.gradle\caches\transforms-3\da126081c8d2f2a90bb4b0556937d4ac\transformed\jetified-ds-photo-editor-sdk-v10\AndroidManifest.xml:15:5-79
+29-->[:ds-photo-editor-sdk-v10:] C:\Users\gohuy\.gradle\caches\transforms-3\da126081c8d2f2a90bb4b0556937d4ac\transformed\jetified-ds-photo-editor-sdk-v10\AndroidManifest.xml:15:22-76
 30    <uses-permission android:name="android.permission.WAKE_LOCK" />
-30-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/huytruong/.gradle/caches/transforms-3/fa5a3bee4ca3b0f7e6989e500c80c961/transformed/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:24:5-68
-30-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/huytruong/.gradle/caches/transforms-3/fa5a3bee4ca3b0f7e6989e500c80c961/transformed/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:24:22-65
+30-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\8041e15720ee8bb3c8c2e792c684ed42\transformed\jetified-firebase-measurement-connector-impl-15.0.0\AndroidManifest.xml:24:5-68
+30-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\8041e15720ee8bb3c8c2e792c684ed42\transformed\jetified-firebase-measurement-connector-impl-15.0.0\AndroidManifest.xml:24:22-65
 31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-31-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:26:5-110
-31-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:26:22-107
+31-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:26:5-110
+31-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:26:22-107
 32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-32-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:26:5-82
-32-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:26:22-79
+32-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
+32-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:22-79
 33
 34    <application
-34-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:19:5-111:19
+34-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:18:5-106:19
 35        android:name="com.example.sevenalbum.activities.mainActivities.MyApplication"
-35-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:20:9-86
+35-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:19:9-86
 36        android:allowBackup="true"
-36-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:21:9-35
+36-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:20:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.5.0] /Users/huytruong/.gradle/caches/transforms-3/a810bc3cc4072918953833979cd07859/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+37-->[androidx.core:core:1.8.0] C:\Users\gohuy\.gradle\caches\transforms-3\e317c28a9ea7557b1d36cc018ca104ee\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 38        android:configChanges="locale"
-38-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:28:9-39
+38-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:27:9-39
 39        android:debuggable="true"
 40        android:extractNativeLibs="false"
 41        android:icon="@mipmap/ic_launcher"
-41-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:22:9-43
+41-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:21:9-43
 42        android:label="@string/app_name"
-42-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:23:9-41
+42-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:22:9-41
 43        android:largeHeap="true"
-43-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:24:9-33
+43-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:23:9-33
 44        android:requestLegacyExternalStorage="true"
-44-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:25:9-52
+44-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:24:9-52
 45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:26:9-54
+45-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:25:9-54
 46        android:supportsRtl="true"
-46-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:27:9-35
+46-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:26:9-35
 47        android:testOnly="true"
 48        android:theme="@style/Theme.sevenalbum" >
-48-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:30:9-48
+48-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:29:9-48
 49        <meta-data
-49-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:31:9-33:35
+49-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:30:9-32:35
 50            android:name="com.google.mlkit.vision.DEPENDENCIES"
-50-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:32:13-64
+50-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:31:13-64
 51            android:value="ica" />
-51-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:33:13-32
+51-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:32:13-32
 52        <meta-data
-52-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:34:9-36:69
+52-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:33:9-35:69
 53            android:name="com.google.android.gms.version"
-53-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:35:13-58
+53-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:34:13-58
 54            android:value="@integer/google_play_services_version" />
-54-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:36:13-66
+54-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:35:13-66
 55        <meta-data
-55-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:37:9-39:37
+55-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:36:9-38:37
 56            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
-56-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:38:13-70
+56-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:37:13-70
 57            android:value="label" />
-57-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:39:13-34
+57-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:38:13-34
 58
 59        <activity
-59-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:41:9-43:39
+59-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:40:9-42:39
 60            android:name="com.example.sevenalbum.activities.subActivities.GifShowActivity"
-60-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:42:13-91
+60-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:41:13-91
 61            android:exported="true" />
-61-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:43:13-36
+61-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:42:13-36
 62        <activity
-62-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:44:9-46:39
+62-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:43:9-45:39
 63            android:name="com.example.sevenalbum.activities.subActivities.MultiSelectImage"
-63-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:45:13-92
+63-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:44:13-92
 64            android:exported="true" />
-64-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:46:13-36
+64-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:45:13-36
 65        <activity
-65-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:47:9-49:39
+65-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:46:9-48:39
 66            android:name="com.example.sevenalbum.activities.subActivities.ItemSecretMultiSelectActivity"
-66-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:48:13-105
+66-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:47:13-105
 67            android:exported="true" />
-67-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:49:13-36
+67-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:48:13-36
 68        <activity
-68-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:50:9-52:39
+68-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:49:9-51:39
 69            android:name="com.example.sevenalbum.activities.subActivities.ItemAlbumMultiSelectActivity"
-69-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:51:13-104
+69-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:50:13-104
 70            android:exported="true" />
-70-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:52:13-36
+70-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:51:13-36
 71        <activity
-71-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:53:9-61:20
+71-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:52:9-60:20
 72            android:name="com.example.sevenalbum.activities.mainActivities.SplashActivity"
-72-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:54:13-91
+72-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:53:13-91
 73            android:exported="true" >
-73-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:55:13-36
+73-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:54:13-36
 74            <intent-filter>
-74-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:56:13-60:29
+74-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:55:13-59:29
 75                <action android:name="android.intent.action.MAIN" />
-75-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:57:17-69
-75-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:57:25-66
+75-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:56:17-69
+75-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:56:25-66
 76
 77                <category android:name="android.intent.category.LAUNCHER" />
-77-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:59:17-77
-77-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:59:27-74
+77-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:58:17-77
+77-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:58:27-74
 78            </intent-filter>
 79        </activity>
 80        <activity
-80-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:62:9-65:52
-81            android:name="com.example.sevenalbum.activities.mainActivities.SettingsActivity"
-81-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:63:13-93
+80-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:61:9-64:52
+81            android:name="com.example.sevenalbum.activities.mainActivities.AddImageToAlbumActivity"
+81-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:62:13-100
 82            android:exported="true"
-82-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:64:13-36
+82-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:63:13-36
 83            android:screenOrientation="portrait" />
-83-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:65:13-49
+83-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:64:13-49
 84        <activity
-84-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:66:9-69:52
-85            android:name="com.example.sevenalbum.activities.mainActivities.AddImageToAlbumActivity"
-85-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:67:13-100
+84-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:65:9-68:52
+85            android:name="com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity"
+85-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:66:13-94
 86            android:exported="true"
-86-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:68:13-36
+86-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:67:13-36
 87            android:screenOrientation="portrait" />
-87-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:69:13-49
+87-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:68:13-49
 88        <activity
-88-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:70:9-73:52
-89            android:name="com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity"
-89-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:71:13-94
+88-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:69:9-72:52
+89            android:name="com.example.sevenalbum.activities.mainActivities.SlideShowActivity"
+89-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:70:13-94
 90            android:exported="true"
-90-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:72:13-36
+90-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:71:13-36
 91            android:screenOrientation="portrait" />
-91-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:73:13-49
+91-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:72:13-49
 92        <activity
-92-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:74:9-77:52
-93            android:name="com.example.sevenalbum.activities.mainActivities.SlideShowActivity"
-93-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:75:13-94
+92-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:73:9-76:52
+93            android:name="com.example.sevenalbum.activities.mainActivities.PictureActivity"
+93-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:74:13-92
 94            android:exported="true"
-94-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:76:13-36
+94-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:75:13-36
 95            android:screenOrientation="portrait" />
-95-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:77:13-49
+95-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:76:13-49
 96        <activity
-96-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:78:9-81:52
-97            android:name="com.example.sevenalbum.activities.mainActivities.PictureActivity"
-97-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:79:13-92
+96-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:77:9-80:52
+97            android:name="com.example.sevenalbum.activities.mainActivities.CreateAlbumActivity"
+97-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:78:13-96
 98            android:exported="true"
-98-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:80:13-36
+98-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:79:13-36
 99            android:screenOrientation="portrait" />
-99-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:81:13-49
+99-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:80:13-49
 100        <activity
-100-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:82:9-85:52
-101            android:name="com.example.sevenalbum.activities.mainActivities.CreateAlbumActivity"
-101-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:83:13-96
+100-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:81:9-84:52
+101            android:name="com.example.sevenalbum.activities.mainActivities.MainActivity"
+101-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:82:13-89
 102            android:exported="true"
-102-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:84:13-36
+102-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:83:13-36
 103            android:screenOrientation="portrait" />
-103-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:85:13-49
+103-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:84:13-49
 104        <activity
-104-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:86:9-89:52
-105            android:name="com.example.sevenalbum.activities.mainActivities.MainActivity"
-105-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:87:13-89
-106            android:exported="true"
-106-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:88:13-36
-107            android:screenOrientation="portrait" />
-107-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:89:13-49
+104-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:85:9-88:84
+105            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+105-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:86:13-80
+106            android:screenOrientation="portrait"
+106-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:87:13-49
+107            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+107-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:88:13-81
 108        <activity
-108-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:90:9-93:84
-109            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
-109-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:91:13-80
+108-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:89:9-92:84
+109            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+109-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:90:13-87
 110            android:screenOrientation="portrait"
-110-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:92:13-49
+110-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:91:13-49
 111            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-111-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:93:13-81
+111-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:92:13-81
 112        <activity
-112-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:94:9-97:84
-113            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
-113-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:95:13-87
+112-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:93:9-97:55
+113            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+113-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:94:13-84
 114            android:screenOrientation="portrait"
-114-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:96:13-49
-115            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-115-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:97:13-81
-116        <activity
-116-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:98:9-102:55
-117            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
-117-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:99:13-84
-118            android:screenOrientation="portrait"
-118-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:100:13-49
-119            android:theme="@android:style/Theme.Material.NoActionBar"
-119-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:101:13-70
-120            android:windowSoftInputMode="adjustPan" />
-120-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:102:13-52
+114-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:95:13-49
+115            android:theme="@android:style/Theme.Material.NoActionBar"
+115-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:96:13-70
+116            android:windowSoftInputMode="adjustPan" />
+116-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:97:13-52
+117        <activity
+117-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:98:9-101:84
+118            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+118-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:99:13-84
+119            android:screenOrientation="portrait"
+119-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:100:13-49
+120            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
+120-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:101:13-81
 121        <activity
-121-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:103:9-106:84
-122            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
-122-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:104:13-84
+121-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:102:9-105:84
+122            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+122-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:103:13-84
 123            android:screenOrientation="portrait"
-123-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:105:13-49
+123-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:104:13-49
 124            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-124-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:106:13-81
-125        <activity
-125-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:107:9-110:84
-126            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
-126-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:108:13-84
-127            android:screenOrientation="portrait"
-127-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:109:13-49
-128            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-128-->/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/AndroidManifest.xml:110:13-81
-129
-130        <service
-130-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:9:9-15:19
-131            android:name="com.google.firebase.components.ComponentDiscoveryService"
-131-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:10:13-84
-132            android:directBootAware="true"
-132-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-133            android:exported="false" >
-133-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:11:13-37
-134            <meta-data
-134-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:12:13-14:85
-135                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
-135-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:13:17-108
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-ml-vision:24.0.3] /Users/huytruong/.gradle/caches/transforms-3/c58c8fec0564c8bfaac591086de8f199/transformed/jetified-firebase-ml-vision-24.0.3/AndroidManifest.xml:14:17-82
-137            <meta-data
-137-->[com.google.firebase:firebase-ml-common:22.1.1] /Users/huytruong/.gradle/caches/transforms-3/527f72a0b3c7e3751973d19360879848/transformed/jetified-firebase-ml-common-22.1.1/AndroidManifest.xml:11:13-13:85
-138                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
-138-->[com.google.firebase:firebase-ml-common:22.1.1] /Users/huytruong/.gradle/caches/transforms-3/527f72a0b3c7e3751973d19360879848/transformed/jetified-firebase-ml-common-22.1.1/AndroidManifest.xml:12:17-117
-139                android:value="com.google.firebase.components.ComponentRegistrar" />
-139-->[com.google.firebase:firebase-ml-common:22.1.1] /Users/huytruong/.gradle/caches/transforms-3/527f72a0b3c7e3751973d19360879848/transformed/jetified-firebase-ml-common-22.1.1/AndroidManifest.xml:13:17-82
-140            <meta-data
-140-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/huytruong/.gradle/caches/transforms-3/fa5a3bee4ca3b0f7e6989e500c80c961/transformed/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:28:13-30:85
-141                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-141-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/huytruong/.gradle/caches/transforms-3/fa5a3bee4ca3b0f7e6989e500c80c961/transformed/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:29:17-139
-142                android:value="com.google.firebase.components.ComponentRegistrar" />
-142-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] /Users/huytruong/.gradle/caches/transforms-3/fa5a3bee4ca3b0f7e6989e500c80c961/transformed/jetified-firebase-measurement-connector-impl-15.0.0/AndroidManifest.xml:30:17-82
-143            <meta-data
-143-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:32:13-34:85
-144                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-144-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:33:17-96
-145                android:value="com.google.firebase.components.ComponentRegistrar" />
-145-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:34:17-82
-146            <meta-data
-146-->[com.google.firebase:firebase-installations:16.2.1] /Users/huytruong/.gradle/caches/transforms-3/cddfed1cd5c9f1ac103d349fd3296f00/transformed/jetified-firebase-installations-16.2.1/AndroidManifest.xml:17:13-19:85
-147                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-147-->[com.google.firebase:firebase-installations:16.2.1] /Users/huytruong/.gradle/caches/transforms-3/cddfed1cd5c9f1ac103d349fd3296f00/transformed/jetified-firebase-installations-16.2.1/AndroidManifest.xml:18:17-127
-148                android:value="com.google.firebase.components.ComponentRegistrar" />
-148-->[com.google.firebase:firebase-installations:16.2.1] /Users/huytruong/.gradle/caches/transforms-3/cddfed1cd5c9f1ac103d349fd3296f00/transformed/jetified-firebase-installations-16.2.1/AndroidManifest.xml:19:17-82
-149        </service>
-150
-151        <receiver
-151-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:29:9-33:20
-152            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-152-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:30:13-85
-153            android:enabled="true"
-153-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:31:13-35
-154            android:exported="false" >
-154-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:32:13-37
-155        </receiver>
-156        <receiver
-156-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:34:9-42:20
-157            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-157-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:35:13-100
-158            android:enabled="true"
-158-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:36:13-35
-159            android:exported="true"
-159-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:37:13-36
-160            android:permission="android.permission.INSTALL_PACKAGES" >
-160-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:38:13-69
-161            <intent-filter>
-161-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:39:13-41:29
-162                <action android:name="com.android.vending.INSTALL_REFERRER" />
-162-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:17-79
-162-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:40:25-76
-163            </intent-filter>
-164        </receiver>
-165
+124-->D:\Desktop\Projects\7Album\app\src\main\AndroidManifest.xml:105:13-81
+125
+126        <service
+126-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:9:9-15:19
+127            android:name="com.google.firebase.components.ComponentDiscoveryService"
+127-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:10:13-84
+128            android:directBootAware="true"
+128-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+129            android:exported="false" >
+129-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:11:13-37
+130            <meta-data
+130-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:12:13-14:85
+131                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+131-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:13:17-108
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\gohuy\.gradle\caches\transforms-3\11173ef8a8c876a6ec4bcfd03fc123b5\transformed\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:14:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\gohuy\.gradle\caches\transforms-3\1769e9a118ca73e8bbe3a6a2f4e6d8d9\transformed\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:11:13-13:85
+134                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+134-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\gohuy\.gradle\caches\transforms-3\1769e9a118ca73e8bbe3a6a2f4e6d8d9\transformed\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:12:17-117
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-ml-common:22.1.1] C:\Users\gohuy\.gradle\caches\transforms-3\1769e9a118ca73e8bbe3a6a2f4e6d8d9\transformed\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:13:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\8041e15720ee8bb3c8c2e792c684ed42\transformed\jetified-firebase-measurement-connector-impl-15.0.0\AndroidManifest.xml:28:13-30:85
+137                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+137-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\8041e15720ee8bb3c8c2e792c684ed42\transformed\jetified-firebase-measurement-connector-impl-15.0.0\AndroidManifest.xml:29:17-139
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\8041e15720ee8bb3c8c2e792c684ed42\transformed\jetified-firebase-measurement-connector-impl-15.0.0\AndroidManifest.xml:30:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:32:13-34:85
+140                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+140-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:33:17-96
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:34:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\gohuy\.gradle\caches\transforms-3\816ce0c85c741f31044541fb52ad60ee\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:17:13-19:85
+143                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+143-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\gohuy\.gradle\caches\transforms-3\816ce0c85c741f31044541fb52ad60ee\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-installations:16.2.1] C:\Users\gohuy\.gradle\caches\transforms-3\816ce0c85c741f31044541fb52ad60ee\transformed\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
+145        </service>
+146
+147        <receiver
+147-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:29:9-33:20
+148            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+148-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:30:13-85
+149            android:enabled="true"
+149-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:31:13-35
+150            android:exported="false" >
+150-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:32:13-37
+151        </receiver>
+152        <receiver
+152-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:34:9-42:20
+153            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+153-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:35:13-100
+154            android:enabled="true"
+154-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:36:13-35
+155            android:exported="true"
+155-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:37:13-36
+156            android:permission="android.permission.INSTALL_PACKAGES" >
+156-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:38:13-69
+157            <intent-filter>
+157-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:39:13-41:29
+158                <action android:name="com.android.vending.INSTALL_REFERRER" />
+158-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:40:17-79
+158-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:40:25-76
+159            </intent-filter>
+160        </receiver>
+161
+162        <service
+162-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:44:9-47:40
+163            android:name="com.google.android.gms.measurement.AppMeasurementService"
+163-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:45:13-84
+164            android:enabled="true"
+164-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:46:13-35
+165            android:exported="false" />
+165-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:47:13-37
 166        <service
-166-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:44:9-47:40
-167            android:name="com.google.android.gms.measurement.AppMeasurementService"
-167-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:45:13-84
+166-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:48:9-52:72
+167            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+167-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:49:13-87
 168            android:enabled="true"
-168-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:46:13-35
-169            android:exported="false" />
-169-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:47:13-37
-170        <service
-170-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:48:9-52:72
-171            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-171-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:49:13-87
-172            android:enabled="true"
-172-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:50:13-35
-173            android:exported="false"
-173-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:51:13-37
-174            android:permission="android.permission.BIND_JOB_SERVICE" />
-174-->[com.google.firebase:firebase-analytics:15.0.2] /Users/huytruong/.gradle/caches/transforms-3/522b3c5963e0f5f1ea487e4ed844c3ba/transformed/jetified-firebase-analytics-15.0.2/AndroidManifest.xml:52:13-69
-175
-176        <receiver
-176-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:37:9-44:20
-177            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-177-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:38:13-78
-178            android:exported="true"
-178-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:39:13-36
-179            android:permission="com.google.android.c2dm.permission.SEND" >
-179-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:40:13-73
-180            <intent-filter>
-180-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:41:13-43:29
-181                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-181-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:42:17-81
-181-->[com.google.firebase:firebase-iid:20.1.5] /Users/huytruong/.gradle/caches/transforms-3/8535285cf275134db32f2e18f2e96445/transformed/jetified-firebase-iid-20.1.5/AndroidManifest.xml:42:25-78
-182            </intent-filter>
-183        </receiver>
-184
-185        <activity
-185-->[com.google.android.gms:play-services-base:17.0.0] /Users/huytruong/.gradle/caches/transforms-3/792c1c09c41f15a3a8afffc3db939d08/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-186            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-186-->[com.google.android.gms:play-services-base:17.0.0] /Users/huytruong/.gradle/caches/transforms-3/792c1c09c41f15a3a8afffc3db939d08/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-187            android:exported="false"
-187-->[com.google.android.gms:play-services-base:17.0.0] /Users/huytruong/.gradle/caches/transforms-3/792c1c09c41f15a3a8afffc3db939d08/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-188            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-188-->[com.google.android.gms:play-services-base:17.0.0] /Users/huytruong/.gradle/caches/transforms-3/792c1c09c41f15a3a8afffc3db939d08/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-189
-190        <provider
-190-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-191            android:name="com.google.firebase.provider.FirebaseInitProvider"
-191-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-192            android:authorities="com.example.sevenalbum.firebaseinitprovider"
-192-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-193            android:exported="false"
-193-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-194            android:initOrder="100" />
-194-->[com.google.firebase:firebase-common:19.3.0] /Users/huytruong/.gradle/caches/transforms-3/39635a2b406848937f27310ac21c1b66/transformed/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-195    </application>
-196
-197</manifest>
+168-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:50:13-35
+169            android:exported="false"
+169-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:51:13-37
+170            android:permission="android.permission.BIND_JOB_SERVICE" />
+170-->[com.google.firebase:firebase-analytics:15.0.2] C:\Users\gohuy\.gradle\caches\transforms-3\5aa365cd706e9934b864b16718464a08\transformed\jetified-firebase-analytics-15.0.2\AndroidManifest.xml:52:13-69
+171
+172        <receiver
+172-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:37:9-44:20
+173            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+173-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:38:13-78
+174            android:exported="true"
+174-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:39:13-36
+175            android:permission="com.google.android.c2dm.permission.SEND" >
+175-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:40:13-73
+176            <intent-filter>
+176-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:41:13-43:29
+177                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+177-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:17-81
+177-->[com.google.firebase:firebase-iid:20.1.5] C:\Users\gohuy\.gradle\caches\transforms-3\4ef7b1bce4f6b957118c812bac49aae1\transformed\jetified-firebase-iid-20.1.5\AndroidManifest.xml:42:25-78
+178            </intent-filter>
+179        </receiver>
+180
+181        <provider
+181-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+182            android:name="com.google.firebase.provider.FirebaseInitProvider"
+182-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+183            android:authorities="com.example.sevenalbum.firebaseinitprovider"
+183-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+184            android:exported="false"
+184-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+185            android:initOrder="100" />
+185-->[com.google.firebase:firebase-common:19.3.0] C:\Users\gohuy\.gradle\caches\transforms-3\3cb49edba2925de22d29cf85debef17e\transformed\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+186
+187        <activity
+187-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\4eaaa201e8ad60728e20897bf200f0c8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+188            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+188-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\4eaaa201e8ad60728e20897bf200f0c8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+189            android:exported="false"
+189-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\4eaaa201e8ad60728e20897bf200f0c8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+190            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+190-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\gohuy\.gradle\caches\transforms-3\4eaaa201e8ad60728e20897bf200f0c8\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+191
+192        <provider
+192-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+193            android:name="androidx.startup.InitializationProvider"
+193-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+194            android:authorities="com.example.sevenalbum.androidx-startup"
+194-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+195            android:exported="false" >
+195-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+196            <meta-data
+196-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+197                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+197-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+198                android:value="androidx.startup" />
+198-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gohuy\.gradle\caches\transforms-3\b4bc13a9fcb12d504fec4f61889f9b07\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+199            <meta-data
+199-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\gohuy\.gradle\caches\transforms-3\9deaec92174f166c2fdcfb7abed443cd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+200                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+200-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\gohuy\.gradle\caches\transforms-3\9deaec92174f166c2fdcfb7abed443cd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+201                android:value="androidx.startup" />
+201-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\gohuy\.gradle\caches\transforms-3\9deaec92174f166c2fdcfb7abed443cd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+202        </provider>
+203    </application>
+204
+205</manifest>

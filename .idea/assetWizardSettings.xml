@@ -336,7 +336,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/camera/baseline_camera_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../AppData/Local/Android/Sdk/icons/material/materialicons/alarm/baseline_alarm_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -347,8 +347,8 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="5870c9" />
-                            <entry key="outputName" value="baseline_camera_24" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/logo_transparent_adobe_express.svg" />
+                            <entry key="outputName" value="baseline_alarm_24" />
+                            <entry key="sourceFile" value="C:\Users\gohuy\Downloads\logo_transparent_adobe_express.svg" />
                           </map>
                         </option>
                       </PersistentState>

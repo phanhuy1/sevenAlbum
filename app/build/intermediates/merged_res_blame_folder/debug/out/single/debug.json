@@ -1,466 +1,474 @@
 [
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_toolbar_camera.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_toolbar_camera.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_heart.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_heart.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_add_image_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_add_image_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_slide_show.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_slide_show.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_list_album_layout.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/list_album_layout.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_list_album_menu.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\list_album_menu.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_share.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_share.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_create_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_create_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_toolbar_camera.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_toolbar_camera.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_albums.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_albums.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_time.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_time.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/xml_file_paths.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/xml/file_paths.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\xml\\file_paths.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_user.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_user.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_new_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_new_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_multi_select_image.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_multi_select_image.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_multi_secret.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_multi_secret.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable-v24_bottom_sheet_background.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable-v24/bottom_sheet_background.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_create_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_create_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_secret.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_secret.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_back.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_photos.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_photos.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_add_photos.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_add_photos.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_favorite.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_favorite.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_favorite.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_favorite.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_multi_secret.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_multi_secret.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_share.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_share.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_settings.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_settings.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_dialog_search_advanced.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_dialog_search_advanced.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_logo_photo.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_logo_photo.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_heart_fill.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_heart_fill.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_picture_album_span2.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_picture_album_span2.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_bottom_sheet_search.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_bottom_sheet_search.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_category.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_category.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_info.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_info.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable-v24_bottom_sheet_background.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable-v24\\bottom_sheet_background.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_model.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_model.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_favorite.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_favorite.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_star.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_star.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_toolbar.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_toolbar.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_favor.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_favor.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_btn_circle_icon.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\btn_circle_icon.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_share.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_share.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_lock_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_lock_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_multi_select_image.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_multi_select_image.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_add.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_add.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_movie_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_movie_24.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_toolbar_info.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_toolbar_info.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_secret_changepass.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_secret_changepass.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_star_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_star_24.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_back.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_back.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/anim_anim_open_fragment.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/anim/anim_open_fragment.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_slide_show.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_slide_show.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_albums.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_albums.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_multi_select.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_multi_select.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_dev.jpg.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\dev.jpg"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_camera_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_camera_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_dev.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_dev.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_model.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_model.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_info.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_info.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_size.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_size.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_list_album_appbar.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/list_album_appbar.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_slide_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_slide_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/xml_setting.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/xml/setting.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\anim_anim_layout_ryc_1.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\anim\\anim_layout_ryc_1.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_search_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_search_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\color_custom_color_bottom_nav.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\color\\custom_color_bottom_nav.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_gallery.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_gallery.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/color_custom_color_bottom_nav.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/color/custom_color_bottom_nav.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_settings.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_settings.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_picture_album_span2.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_picture_album_span2.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_slide_show.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_slide_show.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_item_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_item_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_slide_show.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_slide_show.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_multi_select.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_multi_select.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_bottom_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_bottom_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_bottom_sheet_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_bottom_sheet_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_toolbar_info.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_toolbar_info.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_secret_forgotpass.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_secret_forgotpass.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_change_span_count.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_change_span_count.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_dev.jpg.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/dev.jpg"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_bottom_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_bottom_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_exposure.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_exposure.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_user.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_user.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_camera.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_camera.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_anh1.jpg.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\anh1.jpg"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_time.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_time.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_effect_slide.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_effect_slide.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_picture_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_picture_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_change_span_count.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_change_span_count.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\anim_anim_layout_ryc_2.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\anim\\anim_layout_ryc_2.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_save.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_save.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_star_red.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_star_red.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\anim_anim_close_fragment.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\anim\\anim_close_fragment.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_gif_show.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_gif_show.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_star.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_star.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_favorite.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_favorite.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/anim_anim_layout_ryc_1.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/anim/anim_layout_ryc_1.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\anim_anim_open_fragment.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\anim\\anim_open_fragment.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_size.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_size.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_star_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_star_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\color_custom_color_bottom_icon.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\color\\custom_color_bottom_icon.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_delete.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_delete.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_share.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_share.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_tick.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_tick.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_secret_forgotpass.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_secret_forgotpass.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/anim_anim_layout_ryc_2.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/anim/anim_layout_ryc_2.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_top_multi_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_top_multi_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_secret.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_secret.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_item_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_item_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_lock_24.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_effect_slide.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_effect_slide.xml"
+        "merged": "com.example.sevenalbum.app-merged_res-38:/drawable_ic_picture.xml.flat",
+        "source": "com.example.sevenalbum.app-main-40:/drawable/ic_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_logo_photo.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_logo_photo.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\anim_anim_layout_ryc_3.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\anim\\anim_layout_ryc_3.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_photo_library_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_photo_library_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_picture_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_picture_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_exposure.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_exposure.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_dialog_search_advanced.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_dialog_search_advanced.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_bottom_sheet_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_bottom_sheet_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_info_focal_length.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_info_focal_length.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_layout_bottom_sheet_add_to_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\layout_bottom_sheet_add_to_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_baseline_movie_24.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/baseline_movie_24.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_info_focal_length.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_info_focal_length.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_secret_changepass.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_secret_changepass.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_tick.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_tick.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_add_image_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_add_image_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_edit.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_edit.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_new_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_new_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/anim_anim_layout_ryc_3.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/anim/anim_layout_ryc_3.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_search.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_category.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_category.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_list_album_appbar.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\list_album_appbar.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_slide_picture.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_slide_picture.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_photo.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_photo.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_anh1.jpg.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/anh1.jpg"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_picture.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_search_result.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_search_result.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_bottom_sheet_search.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_bottom_sheet_search.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_camera.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_add_photos.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_add_photos.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_item_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_item_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_list_album_menu.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/list_album_menu.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_list_album_layout.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\list_album_layout.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_multi_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_multi_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_secret.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_secret.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_splash.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_splash.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_bottom_nav.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_bottom_nav.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_dev.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_dev.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_gallery.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_gallery.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_top_favor.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_top_favor.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_search_result.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_search_result.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_picture_album_linear.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_picture_album_linear.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_star_red.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_star_red.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_fragment_photo.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/fragment_photo.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_slide_show.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_slide_show.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_toolbar.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_toolbar.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_bottom_nav.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_bottom_nav.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_activity_gif_show.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/activity_gif_show.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/anim_anim_close_fragment.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/anim/anim_close_fragment.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_search_24.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_search.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_search.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_item_picture_album_linear.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\item_picture_album_linear.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/menu_menu_album_secret.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/menu/menu_album_secret.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_camera_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_camera_24.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_delete_list_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_delete_list_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\menu_menu_album_secret.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\menu\\menu_album_secret.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_delete_list_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_delete_list_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_layout_bottom_sheet_add_to_album.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/layout_bottom_sheet_add_to_album.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_item_album.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_item_album.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/layout_item_slide_show.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/layout/item_slide_show.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_ic_photos.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\ic_photos.xml"
     },
     {
-        "merged": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/merged_res/debug/drawable_ic_save.xml.flat",
-        "source": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/src/main/res/drawable/ic_save.xml"
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_activity_picture.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\activity_picture.xml"
+    },
+    {
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\layout_fragment_secret.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\layout\\fragment_secret.xml"
+    },
+    {
+        "merged": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-merged_res-38:\\drawable_baseline_photo_library_24.xml.flat",
+        "source": "C:\\Users\\gohuy\\.gradle\\daemon\\7.5\\com.example.sevenalbum.app-main-40:\\drawable\\baseline_photo_library_24.xml"
     }
 ]

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-measurement-connector:15.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/beb09b2648068d21ab9410bb454501f5/transformed/jetified-firebase-measurement-connector-15.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/beb09b2648068d21ab9410bb454501f5/transformed/jetified-firebase-measurement-connector-15.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/217981c3741d47ed473b321a7bbdd368/transformed/jetified-firebase-measurement-connector-15.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/217981c3741d47ed473b321a7bbdd368/transformed/jetified-firebase-measurement-connector-15.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

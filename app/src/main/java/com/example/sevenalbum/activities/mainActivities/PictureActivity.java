@@ -193,10 +193,10 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
                         DataLocalManager.setListImg(imageListFavor);
                         Toast.makeText(PictureActivity.this, imageListFavor.size()+"", Toast.LENGTH_SHORT).show();
                         if(!check(imgPath)){
-                            bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_star);
+                            bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_heart);
                         }
                         else{
-                            bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_star_red);
+                            bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_heart_fill);
 
                         }
                         break;
@@ -555,10 +555,10 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
                 imgPath = imageListPath.get(position);
                 setTitleToolbar(thumb.substring(thumb.lastIndexOf('/') + 1));
                 if(!check(imgPath)){
-                    bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_star);
+                    bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_heart);
                 }
                 else{
-                    bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_star_red);
+                    bottomNavigationView.getMenu().getItem(2).setIcon(R.drawable.ic_heart_fill);
                 }
             }
 

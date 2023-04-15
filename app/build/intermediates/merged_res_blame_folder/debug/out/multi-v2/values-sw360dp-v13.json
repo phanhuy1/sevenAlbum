@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/huytruong/Documents/GitHub/sevenAlbum/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.example.sevenalbum.app-mergeDebugResources-36:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/huytruong/.gradle/caches/transforms-3/b33bf109adf70d2dc377aec62f086282/transformed/preference-1.1.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\gohuy\\.gradle\\caches\\transforms-3\\edaa993a3e0339be3a76d4c2b36dfe72\\transformed\\preference-1.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
