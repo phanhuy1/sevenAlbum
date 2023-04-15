@@ -22,7 +22,7 @@ public class Category {
         this.listImage = listImage;
     }
 
-    public void addListGirl(Image img){this.listImage.add(img);}
+    public void addListImage(Image img){this.listImage.add(img);}
 
     public Category(String nameCategory, List<Image> listImage) {
         this.nameCategory = nameCategory;

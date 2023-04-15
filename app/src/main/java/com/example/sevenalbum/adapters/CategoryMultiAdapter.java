@@ -73,8 +73,6 @@ public class CategoryMultiAdapter extends RecyclerView.Adapter<CategoryMultiAdap
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            tvNameCategory = itemView.findViewById(R.id.tvNameCategory);
             rcvPictures = itemView.findViewById(R.id.rcvPictures);
         }
     }

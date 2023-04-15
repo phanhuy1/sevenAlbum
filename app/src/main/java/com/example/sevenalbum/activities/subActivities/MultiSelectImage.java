@@ -220,13 +220,13 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
 
         try {
             categoryList.add(new Category(imageList.get(0).getDateTaken(),new ArrayList<>()));
-            categoryList.get(categoryCount).addListGirl(imageList.get(0));
+            categoryList.get(categoryCount).addListImage(imageList.get(0));
             for(int i=1;i<imageList.size();i++){
                 if(!imageList.get(i).getDateTaken().equals(imageList.get(i-1).getDateTaken())){
                     categoryList.add(new Category(imageList.get(i).getDateTaken(),new ArrayList<>()));
                     categoryCount++;
                 }
-                categoryList.get(categoryCount).addListGirl(imageList.get(i));
+                categoryList.get(categoryCount).addListImage(imageList.get(i));
             }
             return categoryList;
         } catch (Exception e){

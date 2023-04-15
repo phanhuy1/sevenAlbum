@@ -41,8 +41,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         if (category == null)
             return;
 
-        holder.tvNameCategory.setText(category.getNameCategory());
-
         GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 3);
         holder.rcvPictures.setLayoutManager(gridLayoutManager);
 
@@ -68,8 +66,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            tvNameCategory = itemView.findViewById(R.id.tvNameCategory);
             rcvPictures = itemView.findViewById(R.id.rcvPictures);
         }
     }
