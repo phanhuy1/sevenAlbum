@@ -112,7 +112,7 @@ public class CreateAlbumActivity extends AppCompatActivity implements ListTransI
         @Override
         protected Void doInBackground(Void... voids) {
             String albumName = edtTitleAlbum.getText().toString();
-            String albumPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)+File.separator+"sevenAlbum" + File.separator +albumName;
+            String albumPath = Environment.getExternalStorageDirectory()+File.separator+"sevenAlbum" + File.separator +albumName;
             File directory = new File(albumPath);
             if(!directory.exists()){
                 directory.mkdirs();
