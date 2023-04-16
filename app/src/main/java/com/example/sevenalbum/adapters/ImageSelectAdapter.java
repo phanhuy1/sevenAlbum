@@ -69,9 +69,12 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
             public void onClick(View view) {
                     if (holder.imgPhoto.getImageAlpha() == 100) {
                         holder.imgPhoto.setImageAlpha(255);
+                        holder.itemView.findViewById(R.id.enabledTick).setVisibility(View.INVISIBLE);
                         listTransInterface.removeList(image);
                     } else if (holder.imgPhoto.getImageAlpha() == 255) {
                         holder.imgPhoto.setImageAlpha(100);
+                        holder.itemView.findViewById(R.id.enabledTick).setVisibility(View.VISIBLE);
+
                         listTransInterface.addList(image);
                     }
             }

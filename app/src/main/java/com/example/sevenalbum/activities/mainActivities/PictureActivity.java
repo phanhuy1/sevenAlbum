@@ -717,10 +717,10 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
 
         @Override
         protected Void doInBackground(Void... voids) {
-            File directtory = new File(album.getPathFolder());
-            if(!directtory.exists()){
-                directtory.mkdirs();
-                Log.e("File-no-exist",directtory.getPath());
+            File directory = new File(album.getPathFolder());
+            if(!directory.exists()){
+                directory.mkdirs();
+                Log.e("File-no-exist",directory.getPath());
             }
             String[] paths = new String[1];
             File imgFile = new File(imgPath);

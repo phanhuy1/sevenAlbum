@@ -303,10 +303,10 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
         protected Void doInBackground(Void... voids) {
             String albumName = edittext.getText().toString();
             String albumPath = Environment.getExternalStorageDirectory()+ File.separator+"Pictures" + File.separator +albumName;
-            File directtory = new File(albumPath);
-            if(!directtory.exists()){
-                directtory.mkdirs();
-                Log.e("File-no-exist",directtory.getPath());
+            File directory = new File(albumPath);
+            if(!directory.exists()){
+                directory.mkdirs();
+                Log.e("File-no-exist",directory.getPath());
             }
             String[] paths = new String[listImageSelected.size()];
             int i =0;

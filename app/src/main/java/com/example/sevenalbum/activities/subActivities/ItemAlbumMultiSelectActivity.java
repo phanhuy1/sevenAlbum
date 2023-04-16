@@ -83,12 +83,15 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
         ryc_list_album.setAdapter(imageSelectAdapter);
     }
 
-
-
     private void events() {
         // Toolbar events
         toolbar_item_album.inflateMenu(R.menu.menu_top_multi_album);
         toolbar_item_album.setTitle(album_name);
+
+        toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
+        toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
+        toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
+        toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
 
         // Show back button
         toolbar_item_album.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
@@ -108,64 +111,14 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
                     case R.id.menuMultiDelete:
                         deleteEvents();
                         break;
-                    case R.id.menuSlideshow:
-                        slideShowEvents();
-                        break;
                     case R.id.menu_move_image:
                         moveEvent();
-                        break;
-                    case R.id.menuGif:
-                        gifEvents();
                         break;
                 }
 
                 return true;
             }
         });
-    }
-
-    private void gifEvents() {
-        Toast.makeText(getApplicationContext(),"App sẽ loại bỏ ảnh gif có trong danh sách chọn", Toast.LENGTH_SHORT).show();
-        ArrayList<String> list_send_gif = new ArrayList<>();
-        for(int i =0;i<listImageSelected.size();i++) {
-            if(!listImageSelected.get(i).getPath().contains(".gif"))
-                list_send_gif.add(listImageSelected.get(i).getPath());
-        }
-        if(list_send_gif.size()!=0) {
-            inputDialog(list_send_gif);
-
-        }
-        else
-            Toast.makeText(getApplicationContext(),"Danh sách trống", Toast.LENGTH_SHORT).show();
-    }
-
-    private void inputDialog(ArrayList<String> list_send_gif) {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(ItemAlbumMultiSelectActivity.this);
-        alertDialog.setTitle("Nhập khoảng delay");
-        alertDialog.setMessage("Delay: ");
-        final EditText input = new EditText(ItemAlbumMultiSelectActivity.this);
-        input.setInputType(InputType.TYPE_CLASS_NUMBER);
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT);
-        input.setLayoutParams(lp);
-        alertDialog.setView(input);
-
-        alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                if(!TextUtils.isEmpty(input.getText())) {
-                    Intent intent_gif = new Intent(ItemAlbumMultiSelectActivity.this, GifShowActivity.class);
-                    intent_gif.putExtra("delay", Integer.valueOf(input.getText().toString()));
-                    intent_gif.putStringArrayListExtra("list", list_send_gif);
-                    startActivity(intent_gif);
-                    dialogInterface.cancel();
-                }
-                else
-                    Toast.makeText(getApplicationContext(),"Mời nhập đầy đủ", Toast.LENGTH_SHORT).show();
-            }
-        });
-        alertDialog.show();
     }
 
     private void moveEvent() {
@@ -196,17 +149,6 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
             };
         }
     }
-    private void slideShowEvents() {
-        Intent intent = new Intent(ItemAlbumMultiSelectActivity.this, SlideShowActivity.class);
-        ArrayList<String> list = new ArrayList<>();
-        for(int i=0;i<listImageSelected.size();i++) {
-            list.add(listImageSelected.get(i).getThumb());
-        }
-        intent.putStringArrayListExtra("data_slide", list);
-        intent.putExtra("name", "Slide Show");
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivityForResult(intent, REQUEST_CODE_SLIDESHOW);
-    }
 
     private void setData() {
         myAlbum = intent.getStringArrayListExtra("data_1");
@@ -227,9 +169,33 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
     @Override
     public void addList(Image img) {
         listImageSelected.add(img);
+        if (listImageSelected != null && listImageSelected.size() > 0) {
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete);
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(true);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(true);
+        }
+        else {
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
+        }
     }
     public void removeList(Image img) {
         listImageSelected.remove(img);
+        if (listImageSelected != null && listImageSelected.size() > 0) {
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete);
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(true);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(true);
+        }
+        else {
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
+            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
+            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
+        }
     }
 
     @Override
@@ -246,11 +212,12 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
         protected Void doInBackground(Void... voids) {
             List<Image> listImage = GetAllPhotoFromGallery.getAllImageFromGallery(ItemAlbumMultiSelectActivity.this);
             listAlbum = getListAlbum(listImage);
-            if(path_folder!=null)
-            for(int i =0;i<listAlbum.size();i++) {
-                if(path_folder.equals(listAlbum.get(i).getPathFolder())) {
-                    listAlbum.remove(i);
-                    break;
+            if(path_folder!=null) {
+                for (int i = 0; i < listAlbum.size(); i++) {
+                    if (path_folder.equals(listAlbum.get(i).getPathFolder())) {
+                        listAlbum.remove(i);
+                        break;
+                    }
                 }
             }
             return null;

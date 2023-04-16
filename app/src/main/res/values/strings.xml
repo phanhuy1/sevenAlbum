@@ -28,7 +28,7 @@
     <string name="multi_create_album">Create Album</string>
     <string name="choose">Choose</string>
     <string name="addAlbum">Add to Album</string>
-    <string name="multiSelect">MultiSelect</string>
+    <string name="multiSelect">Select</string>
     <string name="add_image">Add image</string>
     <string name="move_image">Move</string>
     <string name="restore">Restore</string>
@@ -38,7 +38,7 @@
     <string name="add_title">Add title</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="enter">Enter</string>
-    <string name="create_password">Create Password</string>
+    <string name="create_password">Create a new Password</string>
     <string name="question_for_getting_back_password">Question for getting back password</string>
     <string name="write_your_question">Write your question</string>
     <string name="your_answer_for_the_question_above">Your answer for the question above</string>

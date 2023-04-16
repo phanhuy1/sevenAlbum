@@ -42,7 +42,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
     private ItemAlbumAdapter itemAlbumAdapter;
     private ItemAlbumAdapter2 itemAlbumAdapter2;
     private ItemAlbumAdapter3 itemAlbumAdapter3;
-    private int spanCount;
     private int isSecret;
     private int duplicateImg;
     private int isAlbum;
@@ -56,16 +55,10 @@ public class ItemAlbumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_album);
         intent = getIntent();
-        setUpSpanCount();
         mappingControls();
         setData();
         setRyc();
         events();
-    }
-
-    private void setUpSpanCount() {
-        SharedPreferences sharedPref = getSharedPreferences("MyPreferences", MODE_PRIVATE);
-        spanCount = sharedPref.getInt("span_count", 3);
     }
 
     @Override
@@ -76,7 +69,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
             ArrayList<String> resultList = data.getStringArrayListExtra("list_result");
             if(resultList !=null) {
                 myAlbum.addAll(resultList);
-                spanAction();
             }
         }
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE_CHOOSE) {
@@ -86,7 +78,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
                     ArrayList<String> resultList = data.getStringArrayListExtra("list_result");
                     if (resultList != null) {
                         myAlbum.remove(resultList);
-                        spanAction();
                     }
                 }
             }
@@ -99,58 +90,18 @@ public class ItemAlbumActivity extends AppCompatActivity {
             String path_img = data.getStringExtra("path_img");
             if(isSecret == 1) {
                 myAlbum.remove(path_img);
-                spanAction();
             }else if (duplicateImg == 2){
                 myAlbum.remove(path_img);
-                spanAction();
             }
-        }
-    }
-
-    private void spanAction() {
-        if(spanCount == 1) {
-            ryc_list_album.setAdapter(new ItemAlbumAdapter3(myAlbum));
-        }
-        else if(spanCount == 2) {
-            ryc_list_album.setAdapter(new ItemAlbumAdapter2(myAlbum));
-        }
-        else{
-            ryc_list_album.setAdapter(new ItemAlbumAdapter(myAlbum));
         }
     }
 
     private void setRyc() {
         album_name = intent.getStringExtra("name");
-        ryc_list_album.setLayoutManager(new GridLayoutManager(this, spanCount));
+        ryc_list_album.setLayoutManager(new GridLayoutManager(this, 3));
         itemAlbumAdapter = new ItemAlbumAdapter(myAlbum);
-        if(spanCount == 1)
-            ryc_list_album.setAdapter(new ItemAlbumAdapter3(myAlbum));
-        else if(spanCount == 2)
-            ryc_list_album.setAdapter(new ItemAlbumAdapter2(myAlbum));
-        else
-            ryc_list_album.setAdapter(new ItemAlbumAdapter(myAlbum));
+        ryc_list_album.setAdapter(new ItemAlbumAdapter(myAlbum));
     }
-
-    private void animationRyc() {
-        switch(spanCount) {
-            case 1:
-                Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.anim_layout_ryc_1);
-                ryc_list_album.setAnimation(animation1);
-            case 2:
-                Animation animation2 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_layout_ryc_1);
-                ryc_list_album.setAnimation(animation2);
-                break;
-            case 3:
-                Animation animation3 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_layout_ryc_2);
-                ryc_list_album.setAnimation(animation3);
-                break;
-            case 4:
-                Animation animation4 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim_layout_ryc_3);
-                ryc_list_album.setAnimation(animation4);
-                break;
-        }
-    }
-
 
     private void events() {
         // Toolbar events
@@ -175,9 +126,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 switch (id) {
-                    case R.id.change_span_count:
-                        spanCountEvent();
-                        break;
                     case R.id.menuChoose:
                         if(isSecret == 0) {
                             Intent intent_mul = new Intent(ItemAlbumActivity.this, ItemAlbumMultiSelectActivity.class);
@@ -215,34 +163,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
 
     private void hideMenu() {
         toolbar_item_album.getMenu().findItem(R.id.menu_add_image).setVisible(false);
-    }
-
-    private void spanCountEvent() {
-        if(spanCount == 1){
-            spanCount++;
-            ryc_list_album.setLayoutManager(new GridLayoutManager(this, spanCount));
-            ryc_list_album.setAdapter(itemAlbumAdapter2);
-        }
-
-        else if(spanCount < 4 && spanCount > 1) {
-            spanCount++;
-            ryc_list_album.setLayoutManager(new GridLayoutManager(this, spanCount));
-            ryc_list_album.setAdapter(itemAlbumAdapter);
-        }
-        else if(spanCount == 4) {
-
-            spanCount = 1;
-            ryc_list_album.setLayoutManager(new LinearLayoutManager(this));
-            ryc_list_album.setAdapter(itemAlbumAdapter3);
-
-        }
-
-
-        animationRyc();
-        SharedPreferences sharedPref = getSharedPreferences("MyPreferences", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("span_count", spanCount);
-        editor.commit();
     }
 
     private void slideShowEvents() {
@@ -298,7 +218,6 @@ public class ItemAlbumActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void unused) {
             super.onPostExecute(unused);
-            spanAction();
         }
     }
 

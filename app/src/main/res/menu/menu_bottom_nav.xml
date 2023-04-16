@@ -5,26 +5,21 @@
         android:id="@+id/photo"
         android:title="@string/photo"
         android:icon="@drawable/ic_picture"
-
         />
 
     <item android:id="@+id/album"
         android:title="@string/album"
         android:icon="@drawable/ic_albums"
-
-
         />
 
     <item android:id="@+id/scret"
         android:title="@string/secret"
         android:icon="@drawable/ic_secret"
-
         />
 
     <item android:id="@+id/favorite"
         android:title="@string/favorite"
         android:icon="@drawable/ic_heart"
-
         />
 
 

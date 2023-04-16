@@ -48,16 +48,10 @@ public class SecretFragment extends Fragment {
     EditText createPass;
     EditText confirmPass;
     EditText enterPass;
-    EditText question;
-    EditText answer;
     TextInputLayout enterField;
     TextInputLayout createField;
     TextInputLayout confirmField;
-    TextInputLayout questionField;
-    TextInputLayout answerField;
     String password;
-    String info_question;
-    String info_answer;
     SharedPreferences settings;
     boolean checked = false;
     private androidx.appcompat.widget.Toolbar toolbar_album;
@@ -72,8 +66,6 @@ public class SecretFragment extends Fragment {
 
         settings = getActivity().getSharedPreferences("PREFS",0);
         password = settings.getString("password","");
-        info_question = settings.getString("question","");
-        info_answer = settings.getString("answer","");
         view = inflater.inflate(R.layout.fragment_secret, container,false);
         mapping();
         File check_info = new File(secretPath+File.separator+"info.txt");
@@ -81,13 +73,9 @@ public class SecretFragment extends Fragment {
             try {
                 BufferedReader br = new BufferedReader(new FileReader(check_info));
                 password = br.readLine();
-                info_question = br.readLine();
-                info_answer = br.readLine();
                 br.close();
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString("password",password);
-                editor.putString("question",info_question);
-                editor.putString("answer",info_answer);
                 editor.apply();
                 checked=true;
             } catch (FileNotFoundException e) {
@@ -210,59 +198,9 @@ public class SecretFragment extends Fragment {
             public void onClick(View view){
                 String createText = createPass.getText().toString();
                 String confirmText = confirmPass.getText().toString();
-                String questionText = question.getText().toString();
-                String answerText = answer.getText().toString();
                 if(createText.equals("")||confirmText.equals("")){
                     createField.setError("Empty input");
                     confirmField.setError("Empty input");
-                }
-                if(questionText.equals("")||answerText.equals("")){
-                    questionField.setError("Empty input");
-                    answerField.setError("Empty input");
-                }
-                else{
-                    if(createText.equals(confirmText)){
-                        String hashedPass = BCrypt.hashpw(createText,BCrypt.gensalt());
-                        String hashedAnswer = BCrypt.hashpw(answerText,BCrypt.gensalt());
-                        SharedPreferences.Editor editor = settings.edit();
-                        editor.putString("password",hashedPass);
-                        editor.putString("question",questionText);
-                        editor.putString("answer",hashedAnswer);
-                        editor.apply();
-
-                        File mydir = new File(secretPath);
-                        if (!mydir.exists()) {
-                            mydir.mkdirs();
-                            File nomedia = new File(Environment.getExternalStorageDirectory() + File.separator + ".secret" + File.separator + ".nomedia");
-                            try {
-                                nomedia.createNewFile();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                            File info = new File(secretPath+ File.separator+"info.txt");
-
-                            try {
-                                info.createNewFile();
-                                FileOutputStream fos = new FileOutputStream(info);
-                                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
-                                bw.write(hashedPass);
-                                bw.newLine();
-                                bw.write(questionText);
-                                bw.newLine();
-                                bw.write(hashedAnswer);
-                                bw.close();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                        createPassView.setVisibility(View.INVISIBLE);
-                        enterPassView.setVisibility(View.VISIBLE);
-                        updatePassword();
-                        accessSecret();
-                    }
-                    else{
-                        confirmField.setError("Password doesn't match");
-                    }
                 }
             }
         });
@@ -300,11 +238,6 @@ public class SecretFragment extends Fragment {
         enterField = view.findViewById(R.id.enterField);
         createField = view.findViewById(R.id.createField);
         confirmField = view.findViewById(R.id.confirmField);
-        questionField = view.findViewById(R.id.question_field);
-        answerField = view.findViewById(R.id.answer_field);
-        question = view.findViewById(R.id.question);
-        answer = view.findViewById(R.id.answer);
-
     }
     public void accessSecret(){
         Intent intent = new Intent(this.getContext(), ItemAlbumActivity.class);

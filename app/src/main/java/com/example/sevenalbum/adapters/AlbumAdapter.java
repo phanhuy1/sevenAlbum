@@ -135,7 +135,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
 
         private void bindData(Album ref) {
             txtName_album.setText(ref.getName());
-            txtCount_item_album.setText(String.valueOf(ref.getList().size()) + " items");
+            txtCount_item_album.setText(String.valueOf(ref.getList().size()));
             Glide.with(context).load(ref.getImg().getThumb()).into(img_album);
         }
 
