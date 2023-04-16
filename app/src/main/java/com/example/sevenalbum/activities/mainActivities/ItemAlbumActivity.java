@@ -206,10 +206,12 @@ public class ItemAlbumActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            for(int i=0;i<myAlbum.size();i++) {
-                File file = new File(myAlbum.get(i));
-                if(!file.exists()) {
-                    myAlbum.remove(i);
+            if (myAlbum != null) {
+                for (int i = 0; i < myAlbum.size(); i++) {
+                    File file = new File(myAlbum.get(i));
+                    if (!file.exists()) {
+                        myAlbum.remove(i);
+                    }
                 }
             }
             return null;

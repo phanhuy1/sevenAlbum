@@ -27,6 +27,7 @@ import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
 import com.example.sevenalbum.utility.BCrypt;
 import com.example.sevenalbum.utility.FileUtility;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputLayout;
 
 
@@ -202,7 +203,48 @@ public class SecretFragment extends Fragment {
                     createField.setError("Empty input");
                     confirmField.setError("Empty input");
                 }
-            }
+                if(createText.equals(confirmText)){
+                        String hashedPass = BCrypt.hashpw(createText,BCrypt.gensalt());
+                        String hashedAnswer = BCrypt.hashpw("answerText",BCrypt.gensalt());
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("password",hashedPass);
+                        editor.putString("answer",hashedAnswer);
+                        editor.apply();
+
+                        File mydir = new File(secretPath);
+                        if (!mydir.exists()) {
+                            mydir.mkdirs();
+                            File nomedia = new File(Environment.getExternalStorageDirectory() + File.separator + ".secret" + File.separator + ".nomedia");
+                            try {
+                                nomedia.createNewFile();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            File info = new File(secretPath+ File.separator+"info.txt");
+
+                            try {
+                                info.createNewFile();
+                                FileOutputStream fos = new FileOutputStream(info);
+                                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
+                                bw.write(hashedPass);
+                                bw.newLine();
+                                bw.write("question");
+                                bw.newLine();
+                                bw.write(hashedAnswer);
+                                bw.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        createPassView.setVisibility(View.INVISIBLE);
+                        enterPassView.setVisibility(View.VISIBLE);
+                        updatePassword();
+                        accessSecret();
+                    }
+                    else{
+                        confirmField.setError("Password doesn't match");
+                    }
+                }
         });
 
     }

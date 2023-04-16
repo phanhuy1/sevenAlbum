@@ -56,22 +56,22 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.photo:
 
-                        viewPager.setCurrentItem(0);
+                        viewPager.setCurrentItem(0, false);
                         break;
 
                     case R.id.album:
 
-                        viewPager.setCurrentItem(1);
+                        viewPager.setCurrentItem(1, false);
                         break;
 
                     case R.id.scret:
 
-                        viewPager.setCurrentItem(2);
+                        viewPager.setCurrentItem(2, false);
                         break;
 
                     case R.id.favorite:
 
-                        viewPager.setCurrentItem(3);
+                        viewPager.setCurrentItem(3, false);
                         break;
 
                 }
