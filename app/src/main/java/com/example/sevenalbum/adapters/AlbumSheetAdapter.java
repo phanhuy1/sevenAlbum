@@ -1,12 +1,14 @@
 package com.example.sevenalbum.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -69,6 +71,9 @@ public class AlbumSheetAdapter extends RecyclerView.Adapter<AlbumSheetAdapter.Al
             img_album = itemView.findViewById(R.id.img_album);
             txtName_album = itemView.findViewById(R.id.txtName_album);
             txtCount_item_album = itemView.findViewById(R.id.txtCount_item_album);
+            txtName_album.setTextColor(Color.BLACK);
+            txtCount_item_album.setTextColor(Color.BLACK);
+            itemView.findViewById(R.id.albumInfo).setBackgroundColor(Color.WHITE);
             context = itemView.getContext();
         }
 
@@ -86,7 +91,7 @@ public class AlbumSheetAdapter extends RecyclerView.Adapter<AlbumSheetAdapter.Al
 
         private void bindData(Album ref) {
             txtName_album.setText(ref.getName());
-            txtCount_item_album.setText(String.valueOf(ref.getList().size()) + " items");
+            txtCount_item_album.setText(String.valueOf(ref.getList().size()));
             Glide.with(context).load(ref.getImg().getThumb()).into(img_album);
         }
     }
