@@ -84,7 +84,7 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
 
     private void eventToolBar() {
         toolbar_item_album.inflateMenu(R.menu.menu_multi_select);
-        toolbar_item_album.setTitle("Multi Select");
+        toolbar_item_album.setTitle("Select");
 
         toolbar_item_album.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -94,9 +94,9 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
                     case R.id.menuCreateAlbum:
                         AlertDialog.Builder alert = new AlertDialog.Builder(MultiSelectImage.this);
                         edittext = new EditText(MultiSelectImage.this);
-                        alert.setMessage("Enter name album");
+                        alert.setMessage("Enter album name:");
                         alert.setView(edittext);
-                        alert.setPositiveButton("Yes Option", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton("Create", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 if(!TextUtils.isEmpty(edittext.getText())) {
                                     MultiSelectImage.CreateAlbumAsyncTask createAlbumAsyncTask = new MultiSelectImage.CreateAlbumAsyncTask();
@@ -123,29 +123,12 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
                         if(listImageSelected.size()!=0)
                         hideEvents();
                         else 
-                            Toast.makeText(getApplicationContext(), "Danh sách trống", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.menuGif:
-                        gifEvents();
+                            Toast.makeText(getApplicationContext(), "Empty List", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;
             }
         });
-    }
-
-    private void gifEvents() {
-        Toast.makeText(getApplicationContext(),"App sẽ loại bỏ ảnh gif có trong danh sách chọn", Toast.LENGTH_SHORT).show();
-        ArrayList<String> list_send_gif = new ArrayList<>();
-        for(int i =0;i<listImageSelected.size();i++) {
-            if(!listImageSelected.get(i).getPath().contains(".gif"))
-            list_send_gif.add(listImageSelected.get(i).getPath());
-        }
-        if(list_send_gif.size()!=0) {
-            inputDialog(list_send_gif);
-        }
-        else
-            Toast.makeText(getApplicationContext(),"Danh sách trống", Toast.LENGTH_SHORT).show();
     }
 
     private void inputDialog(ArrayList<String> list_send_gif) {
@@ -222,10 +205,10 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
             categoryList.add(new Category(imageList.get(0).getDateTaken(),new ArrayList<>()));
             categoryList.get(categoryCount).addListImage(imageList.get(0));
             for(int i=1;i<imageList.size();i++){
-                if(!imageList.get(i).getDateTaken().equals(imageList.get(i-1).getDateTaken())){
-                    categoryList.add(new Category(imageList.get(i).getDateTaken(),new ArrayList<>()));
-                    categoryCount++;
-                }
+//                if(!imageList.get(i).getDateTaken().equals(imageList.get(i-1).getDateTaken())){
+//                    categoryList.add(new Category(imageList.get(i).getDateTaken(),new ArrayList<>()));
+//                    categoryCount++;
+//                }
                 categoryList.get(categoryCount).addListImage(imageList.get(i));
             }
             return categoryList;

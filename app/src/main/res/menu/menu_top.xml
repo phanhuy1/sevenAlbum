@@ -13,7 +13,4 @@
         android:title="@string/multiSelect"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/duplicateImages"
-        android:title="@string/duplicate_images"
-        app:showAsAction="never"/>
 </menu>

@@ -1,6 +1,7 @@
 package com.example.sevenalbum.adapters;
 
 import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import com.example.sevenalbum.fragments.mainFragments.AlbumFragment;
 import com.example.sevenalbum.fragments.mainFragments.FavoriteFragment;
 import com.example.sevenalbum.fragments.mainFragments.PhotoFragment;
 import com.example.sevenalbum.fragments.mainFragments.SecretFragment;
+import com.example.sevenalbum.models.Album;
 import com.example.sevenalbum.models.Image;
 import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 
@@ -28,7 +30,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     public ViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);
-
     }
 
     @NonNull
@@ -40,9 +41,9 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 1:
                 return new AlbumFragment();
             case 2:
-                return new SecretFragment();
-            case 3:
                 return new FavoriteFragment();
+            case 3:
+                return new SecretFragment();
             default:
                 return null;
         }
@@ -52,6 +53,4 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return 4;
     }
-
-
 }

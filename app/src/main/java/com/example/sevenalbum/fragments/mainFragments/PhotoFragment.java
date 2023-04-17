@@ -123,9 +123,6 @@ public class PhotoFragment extends Fragment {
                     case R.id.menuSearch:
                         eventSearch(item);
                         break;
-                    case R.id.duplicateImages:
-                        actionDuplicateImage();
-                        break;
                     case R.id.menuChoose:
                         Intent intent_mul = new Intent(getContext(), MultiSelectImage.class);
                         startActivityForResult(intent_mul, REQUEST_CODE_MULTI);
@@ -398,10 +395,10 @@ public class PhotoFragment extends Fragment {
             categoryList.add(new Category(imageList.get(0).getDateTaken(), new ArrayList<>()));
             categoryList.get(categoryCount).addListImage(imageList.get(0));
             for (int i = 1; i < imageList.size(); i++) {
-                if (!imageList.get(i).getDateTaken().equals(imageList.get(i - 1).getDateTaken())) {
-                    categoryList.add(new Category(imageList.get(i).getDateTaken(), new ArrayList<>()));
-                    categoryCount++;
-                }
+//                if (!imageList.get(i).getDateTaken().equals(imageList.get(i - 1).getDateTaken())) {
+//                    categoryList.add(new Category(imageList.get(i).getDateTaken(), new ArrayList<>()));
+//                    categoryCount++;
+//                }
                 categoryList.get(categoryCount).addListImage(imageList.get(i));
             }
             return categoryList;

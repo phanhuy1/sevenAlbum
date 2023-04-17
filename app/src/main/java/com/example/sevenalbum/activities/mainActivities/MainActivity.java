@@ -55,22 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.photo:
-
                         viewPager.setCurrentItem(0, false);
                         break;
 
                     case R.id.album:
-
                         viewPager.setCurrentItem(1, false);
                         break;
 
-                    case R.id.scret:
 
+                    case R.id.favorite:
                         viewPager.setCurrentItem(2, false);
                         break;
 
-                    case R.id.favorite:
-
+                    case R.id.secret:
                         viewPager.setCurrentItem(3, false);
                         break;
 
@@ -111,8 +108,7 @@ public class MainActivity extends AppCompatActivity {
                         bottomNavigationView.getMenu().findItem(R.id.album).setChecked(true);
                         break;
                     case 2:
-
-                        bottomNavigationView.getMenu().findItem(R.id.scret).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.secret).setChecked(true);
                         break;
                     case 3:
 

@@ -193,15 +193,16 @@ public class SecretFragment extends Fragment {
             Toast.makeText(getActivity(),"Don't have password", Toast.LENGTH_SHORT).show();
         }
     }
-    public  void eventCreatePass(){
+    public void eventCreatePass(){
         btnCreatePass.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 String createText = createPass.getText().toString();
                 String confirmText = confirmPass.getText().toString();
-                if(createText.equals("")||confirmText.equals("")){
+                if(createText.equals("") || confirmText.equals("")){
                     createField.setError("Empty input");
                     confirmField.setError("Empty input");
+                    return;
                 }
                 if(createText.equals(confirmText)){
                         String hashedPass = BCrypt.hashpw(createText,BCrypt.gensalt());

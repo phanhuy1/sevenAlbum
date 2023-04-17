@@ -12,14 +12,14 @@
         android:icon="@drawable/ic_albums"
         />
 
-    <item android:id="@+id/scret"
-        android:title="@string/secret"
-        android:icon="@drawable/ic_secret"
-        />
-
     <item android:id="@+id/favorite"
         android:title="@string/favorite"
         android:icon="@drawable/ic_heart"
+        />
+
+    <item android:id="@+id/secret"
+        android:title="@string/secret"
+        android:icon="@drawable/ic_secret"
         />
 
 
