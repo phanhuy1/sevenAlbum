@@ -121,8 +121,11 @@ public class CreateAlbumActivity extends AppCompatActivity implements ListTransI
             String[] paths = new String[listImageSelected.size()];
             int i =0;
             Set<String> imageListFavor = DataLocalManager.getListSet();
+            List<String> albumListImg = new ArrayList<String>();
             for (Image img :listImageSelected){
                 File imgFile = new File(img.getPath());
+                albumListImg.add(imgFile.getPath());
+
                 File desImgFile = new File(albumPath,albumName+"_"+imgFile.getName());
                 imgFile.renameTo(desImgFile);
                 imgFile.deleteOnExit();
@@ -136,6 +139,10 @@ public class CreateAlbumActivity extends AppCompatActivity implements ListTransI
                     }
                 }
             }
+            DataLocalManager.setAlbumListImgByList(albumName, albumListImg);
+            List<String> album = DataLocalManager.getListAlbum();
+            album.add(albumName);
+            DataLocalManager.setAlbumByList(album);
             DataLocalManager.setListImg(imageListFavor);
             MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;

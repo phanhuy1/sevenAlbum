@@ -23,13 +23,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.activities.mainActivities.CreateAlbumActivity;
 import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.adapters.AlbumAdapter;
 import com.example.sevenalbum.models.Album;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import com.example.sevenalbum.models.Image;
+import com.example.sevenalbum.utility.FileUtility;
 import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 
 
@@ -172,7 +175,10 @@ public class AlbumFragment extends Fragment {
         List<String> ref = new ArrayList<>();
         List<Album> listAlbum = new ArrayList<>();
 
+        List<String> albumListNames = DataLocalManager.getListAlbum();
+        HashMap<String, Image> imageHashMap = new HashMap<String, Image>();
         for (int i = 0; i < listImage.size(); i++) {
+            imageHashMap.put(listImage.get(i).getPath(), listImage.get(i));
             String[] _array = listImage.get(i).getThumb().split("/");
             String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
             String _name = _array[_array.length - 2];
@@ -186,6 +192,19 @@ public class AlbumFragment extends Fragment {
                 listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
             }
         }
+        for (String album : albumListNames) {
+            List<String> albumList = DataLocalManager.getAlbumListImg(album);
+            if (albumList == null) {
+                continue;
+            }
+            listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+            listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+
+            for (int i = 1; i < albumList.size(); i++) {
+                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+            }
+        }
+
         return listAlbum;
     }
 

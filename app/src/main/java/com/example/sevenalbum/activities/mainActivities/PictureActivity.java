@@ -173,7 +173,7 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
                             // Set data
                             editIntent.setData(Uri.fromFile(new File(imgPath)));
                             // Set output directory
-                            editIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "Simple Gallery");
+                            editIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "Edited Photo");
                             // Set toolbar color
                             editIntent.putExtra(DsPhotoEditorConstants.DS_TOOL_BAR_BACKGROUND_COLOR, Color.parseColor("#FF000000"));
                             // Set background color

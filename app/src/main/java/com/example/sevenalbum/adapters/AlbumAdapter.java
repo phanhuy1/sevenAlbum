@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.models.Album;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -159,6 +160,10 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
                     file.delete();
                 }
             }
+            List<String> albumList = DataLocalManager.getListAlbum();
+            albumList.remove(ref.getName());
+            DataLocalManager.setAlbumByList(albumList);
+            DataLocalManager.deleteAlbumListImg(ref.getName());
             mListAlbums.remove(pos);
             notifyDataSetChanged();
             bottomSheetDialog.cancel();
