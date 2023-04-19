@@ -125,7 +125,7 @@ public class GetAllPhotoFromGallery {
                     listImage.add(image);
                 }
 
-                if(listImage.size()>1000) { // Just for testing.
+                if(listImage.size()>128) { // Just for testing.
                     break;                  // I don't want to load 10 000 photos at once.
                 }
             }
