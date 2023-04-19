@@ -93,26 +93,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageScrollStateChanged(int state) {
                 super.onPageScrollStateChanged(state);
-
             }
 
             @Override
             public void onPageSelected(int position) {
-
                 switch (position){
                     case 0:
                         bottomNavigationView.getMenu().findItem(R.id.photo).setChecked(true);
                         break;
                     case 1:
-
                         bottomNavigationView.getMenu().findItem(R.id.album).setChecked(true);
                         break;
                     case 2:
-                        bottomNavigationView.getMenu().findItem(R.id.secret).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.favorite).setChecked(true);
                         break;
                     case 3:
-
-                        bottomNavigationView.getMenu().findItem(R.id.favorite).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.secret).setChecked(true);
                         break;
                 }
             }
