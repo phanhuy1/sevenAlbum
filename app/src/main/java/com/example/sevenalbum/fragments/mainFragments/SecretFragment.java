@@ -62,9 +62,10 @@ public class SecretFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        secretPath = Environment.getExternalStorageDirectory()+File.separator+".secret";
-
+        File dir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
+        dir.mkdirs();
+        secretPath = dir.getPath();
+        System.out.println(secretPath);
         settings = getActivity().getSharedPreferences("PREFS",0);
         password = settings.getString("password","");
         view = inflater.inflate(R.layout.fragment_secret, container,false);
@@ -212,10 +213,10 @@ public class SecretFragment extends Fragment {
                         editor.putString("answer",hashedAnswer);
                         editor.apply();
 
-                        File mydir = new File(secretPath);
+                        File mydir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
                         if (!mydir.exists()) {
                             mydir.mkdirs();
-                            File nomedia = new File(Environment.getExternalStorageDirectory() + File.separator + ".secret" + File.separator + ".nomedia");
+                            File nomedia = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret" + File.separator + ".nomedia");
                             try {
                                 nomedia.createNewFile();
                             } catch (IOException e) {
@@ -293,9 +294,11 @@ public class SecretFragment extends Fragment {
         this.getContext().startActivity(intent);
     }
     public ArrayList<String> getListImg(){
-        File mydir = new File(secretPath);
+        File mydir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
+        System.out.println(mydir);
         if (!mydir.exists())
         {
+            mydir.mkdirs();
             Toast.makeText(getActivity(),"Secret doesn't exist", Toast.LENGTH_SHORT).show();
             return null;
         }

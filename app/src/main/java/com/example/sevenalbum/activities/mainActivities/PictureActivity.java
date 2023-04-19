@@ -297,21 +297,24 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
                         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
                             public void onClick(DialogInterface dialog, int which) {
-                                String scrPath = Environment.getExternalStorageDirectory()+File.separator+".secret";
-                                File scrDir = new File(scrPath);
+
+                                File scrDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
+                                String scrPath = scrDir.getPath();
                                 if(!scrDir.exists()){
                                     Toast.makeText(PictureActivity.this, "You haven't created secret album", Toast.LENGTH_SHORT).show();
                                 }
                                 else{
                                     FileUtility fu = new FileUtility();
                                     File img = new File(imgPath);
+                                    System.out.println("hello"+ img.getPath());
                                     if(!(scrPath+File.separator+img.getName()).equals(imgPath)){
                                         fu.moveFile(imgPath,img.getName(),scrPath);
                                         Toast.makeText(PictureActivity.this, "Your image is hidden", Toast.LENGTH_SHORT).show();
                                     }
                                     else{
-                                        String outputPath = Environment.getExternalStorageDirectory()+File.separator+"DCIM" + File.separator + "Restore";
-                                        File folder = new File(outputPath);
+
+                                        File folder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Restore");
+                                        String outputPath = folder.getPath();
                                         File imgFile = new File(img.getPath());
                                         File desImgFile = new File(outputPath,imgFile.getName());
                                         if(!folder.exists()) {

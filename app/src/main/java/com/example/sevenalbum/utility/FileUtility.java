@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 
 public class FileUtility {
@@ -70,7 +72,10 @@ public class FileUtility {
             out = null;
 
             // delete the original file
-            new File(inputPath).delete();
+            Path path = Paths.get(inputPath);
+            System.out.println(path);
+            boolean a = new File(String.valueOf(path)).delete();
+            System.out.println(a);
 
 
         }
