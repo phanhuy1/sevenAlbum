@@ -15,10 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.sevenalbum.activities.mainActivities.ItemAlbumActivity;
+import com.example.sevenalbum.activities.mainActivities.AlbumElementActivity;
 import com.example.sevenalbum.R;
-import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
-import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.activities.mainActivities.SlideshowActivity;
+import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.models.Album;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -46,7 +46,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
     @NonNull
     @Override
     public AlbumAdapter.AlbumViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_album, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.album_element_layout, parent, false);
 
 
         return new AlbumAdapter.AlbumViewHolder(view);
@@ -87,7 +87,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
             img_album.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(context, ItemAlbumActivity.class);
+                    Intent intent = new Intent(context, AlbumElementActivity.class);
                     ArrayList<String> list = new ArrayList<>();
                     for(int i=0;i<ref.getList().size();i++) {
                         list.add(ref.getList().get(i).getThumb());
@@ -141,7 +141,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
         }
 
         private void slideShowEvents(@NonNull Album ref) {
-            Intent intent = new Intent(context, SlideShowActivity.class);
+            Intent intent = new Intent(context, SlideshowActivity.class);
             ArrayList<String> list = new ArrayList<>();
             for(int i=0;i<ref.getList().size();i++) {
                 list.add(ref.getList().get(i).getThumb());
@@ -160,16 +160,16 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
                     file.delete();
                 }
             }
-            List<String> albumList = DataLocalManager.getListAlbum();
+            List<String> albumList = LocalDataManager.getListAlbum();
             albumList.remove(ref.getName());
-            DataLocalManager.setAlbumByList(albumList);
-            DataLocalManager.deleteAlbumListImg(ref.getName());
+            LocalDataManager.setAlbumByList(albumList);
+            LocalDataManager.deleteAlbumListImg(ref.getName());
             mListAlbums.remove(pos);
             notifyDataSetChanged();
             bottomSheetDialog.cancel();
         }
         private void openBottomDialog() {
-            View viewDialog = LayoutInflater.from(context).inflate(R.layout.layout_bottom_sheet_album, null);
+            View viewDialog = LayoutInflater.from(context).inflate(R.layout.bottom_sheet_album_layout, null);
             layout_bottom_delete = viewDialog.findViewById(R.id.layout_bottom_delete);
             layout_bottom_slide_show = viewDialog.findViewById(R.id.layout_bottom_slide_show);
             txtPath = viewDialog.findViewById(R.id.txtPath);

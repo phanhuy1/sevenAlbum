@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frag_secret"
+        android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar_album"
+        layout="@layout/toolbar_layout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:padding="20dp"
+        android:id="@+id/frag_enterpass">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_password"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="25dp"
+            app:boxCornerRadiusTopEnd="25dp"
+            app:boxCornerRadiusBottomStart="25dp"
+            app:boxCornerRadiusBottomEnd="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/enterPass" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="@string/enter"-->
+<!--            android:backgroundTint="@android:color/white"-->
+<!--            android:background="@drawable/custom_btn_create"-->
+<!--            android:id="@+id/btnEnterPass"/>-->
+        <Button
+            android:id="@+id/btnEnterPass"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#6DA9E4"
+
+            app:cornerRadius="15dp"
+
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp"
+            android:textColor="@color/white"
+            android:text="@string/enter"
+
+            android:textColorHighlight="#3A3030"
+            android:textColorLink="#634B4B"
+            app:rippleColor="@color/material_on_background_emphasis_high_type"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:id="@+id/frag_createpass">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_password"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp"
+            android:gravity="center"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/createField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_password"
+            app:endIconMode="password_toggle"
+            app:boxCornerRadiusTopStart="25dp"
+            app:boxCornerRadiusTopEnd="25dp"
+            app:boxCornerRadiusBottomStart="25dp"
+            app:boxCornerRadiusBottomEnd="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/createpass"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/confirm_password"
+            app:endIconMode="password_toggle"
+            app:boxCornerRadiusTopStart="25dp"
+            app:boxCornerRadiusTopEnd="25dp"
+            app:boxCornerRadiusBottomStart="25dp"
+            app:boxCornerRadiusBottomEnd="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/confirmpass" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCreatePass"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#6DA9E4"
+
+            app:cornerRadius="15dp"
+
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp"
+            android:textColor="@color/white"
+            android:text="@string/create"
+
+            android:textColorHighlight="#3A3030"
+            android:textColorLink="#634B4B"
+            app:rippleColor="@color/material_on_background_emphasis_high_type"
+            />
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

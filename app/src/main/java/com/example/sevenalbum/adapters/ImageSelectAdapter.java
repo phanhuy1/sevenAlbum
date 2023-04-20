@@ -15,14 +15,14 @@ import com.bumptech.glide.Glide;
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.models.Category;
 import com.example.sevenalbum.models.Image;
-import com.example.sevenalbum.utility.ListTransInterface;
+import com.example.sevenalbum.utility.ItemSelectorManagerInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.ImageSelectHolder> {
 
-    private ListTransInterface listTransInterface;
+    private ItemSelectorManagerInterface listTransInterface;
     private List<Image> listImages;
     private Context context;
     private List<Category> listCategory;
@@ -33,7 +33,7 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
         this.context = context;
     }
 
-    public void setListTransInterface(ListTransInterface listTransInterface) {
+    public void setListTransInterface(ItemSelectorManagerInterface listTransInterface) {
         this.listTransInterface = listTransInterface;
     }
 
@@ -49,7 +49,7 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
     @NonNull
     @Override
     public ImageSelectHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_picture, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.picture_element_layout, parent, false);
 
         return new ImageSelectHolder(view);
     }

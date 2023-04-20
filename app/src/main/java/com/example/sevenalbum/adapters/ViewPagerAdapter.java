@@ -1,7 +1,6 @@
 package com.example.sevenalbum.adapters;
 
 import android.content.Context;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -9,13 +8,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.sevenalbum.fragments.mainFragments.AlbumFragment;
-import com.example.sevenalbum.fragments.mainFragments.FavoriteFragment;
-import com.example.sevenalbum.fragments.mainFragments.PhotoFragment;
-import com.example.sevenalbum.fragments.mainFragments.SecretFragment;
-import com.example.sevenalbum.models.Album;
+import com.example.sevenalbum.fragments.AlbumFragment;
+import com.example.sevenalbum.fragments.FavoriteFragment;
+import com.example.sevenalbum.fragments.PhotoFragment;
+import com.example.sevenalbum.fragments.HiddenPhotoFragment;
 import com.example.sevenalbum.models.Image;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utility.FindAllImagesFromDevice;
 
 import java.util.List;
 
@@ -25,7 +23,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     public void setContext(Context context) {
         this.context = context;
-        data = GetAllPhotoFromGallery.getAllImageFromGallery(context);
+        data = FindAllImagesFromDevice.getAllImageFromGallery(context);
     }
 
     public ViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
@@ -43,7 +41,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 2:
                 return new FavoriteFragment();
             case 3:
-                return new SecretFragment();
+                return new HiddenPhotoFragment();
             default:
                 return null;
         }

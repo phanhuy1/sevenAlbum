@@ -1,22 +1,19 @@
 package com.example.sevenalbum.activities.mainActivities;
 
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.PreferenceManager;
 import androidx.viewpager2.widget.ViewPager2;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.adapters.ViewPagerAdapter;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
+import com.example.sevenalbum.utility.FindAllImagesFromDevice;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
 import com.karan.churi.PermissionManager.PermissionManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Hide status bar
 
         /*getSupportActionBar();*/
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activity_layout);
 
 
 
@@ -122,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         permission.checkResult(requestCode, permissions, grantResults);
-        GetAllPhotoFromGallery.refreshAllImages();
+        FindAllImagesFromDevice.refreshAllImages();
     }
 
 }

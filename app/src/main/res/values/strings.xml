@@ -12,10 +12,10 @@
     <string name="hide_photo">Hide/show photo</string>
     <string name="photo">Photo</string>
     <string name="album">Album</string>
-    <string name="secret">Secret</string>
+    <string name="hidden_album">Hidden Album</string>
     <string name="favorite">Favorite</string>
     <string name="change_password">Change Password</string>
-    <string name="delete_secret_album">Delete Secret Album</string>
+    <string name="delete_hidden_album">Delete Hidden Album</string>
     <string name="advance_search">Advanced Search</string>
     <string name="camera">Camera</string>
     <string name="edit_photo">Edit photo</string>

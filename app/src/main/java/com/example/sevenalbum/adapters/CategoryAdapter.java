@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -31,7 +30,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_category, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.category_element_layout, parent, false);
         return new CategoryViewHolder(view);
     }
 
@@ -44,10 +43,10 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 3);
         holder.rcvPictures.setLayoutManager(gridLayoutManager);
 
-        ImageAdapter girlAdapter = new ImageAdapter(context.getApplicationContext());
-        girlAdapter.setData(category.getListImage());
-        girlAdapter.setListCategory(listCategory);
-        holder.rcvPictures.setAdapter(girlAdapter);
+        ImageAdapter imageSelectAdapter = new ImageAdapter(context.getApplicationContext());
+        imageSelectAdapter.setData(category.getListImage());
+        imageSelectAdapter.setListCategory(listCategory);
+        holder.rcvPictures.setAdapter(imageSelectAdapter);
 
 
     }

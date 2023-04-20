@@ -2,7 +2,6 @@ package com.example.sevenalbum.activities.mainActivities;
 
 
 import android.content.Intent;
-import android.media.MediaScannerConnection;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -14,18 +13,17 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
-import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
+import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.adapters.ImageSelectAdapter;
 import com.example.sevenalbum.models.Image;
-import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
-import com.example.sevenalbum.utility.ListTransInterface;
+import com.example.sevenalbum.utility.FindAllImagesFromDevice;
+import com.example.sevenalbum.utility.ItemSelectorManagerInterface;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class AddImageToAlbumActivity extends AppCompatActivity implements ListTransInterface {
+public class AddImageToAlbumActivity extends AppCompatActivity implements ItemSelectorManagerInterface {
     private ImageView img_back_create_album;
     private ImageView btnTick;
     private RecyclerView rycAddAlbum;
@@ -39,7 +37,7 @@ public class AddImageToAlbumActivity extends AppCompatActivity implements ListTr
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_image_album);
+        setContentView(R.layout.add_image_to_album_activity_layout);
 
         intent = getIntent();
         settingData();
@@ -73,7 +71,7 @@ public class AddImageToAlbumActivity extends AppCompatActivity implements ListTr
 
 
     private void setViewRyc() {
-        listImage = GetAllPhotoFromGallery.getAllImageFromGallery(this);
+        listImage = FindAllImagesFromDevice.getAllImageFromGallery(this);
         ImageSelectAdapter imageAdapter = new ImageSelectAdapter(this);
         imageAdapter.setListTransInterface(this);
         imageAdapter.setData(listImage);
@@ -105,29 +103,16 @@ public class AddImageToAlbumActivity extends AppCompatActivity implements ListTr
 
         @Override
         protected Void doInBackground(Void... voids) {
+            Set<String> listAlbumImg = LocalDataManager.getAlbumSetImg(album_name);
 
-            String[] paths = new String[listImageSelected.size()];
-            int i =0;
-            Set<String> imageListFavor = DataLocalManager.getListSet();
             for (Image img :listImageSelected){
-                File imgFile = new File(img.getPath());
-                File desImgFile = new File(path_folder,album_name+"_"+imgFile.getName());
-                list.add(desImgFile.getPath());
-                imgFile.renameTo(desImgFile);
-                imgFile.deleteOnExit();
-                paths[i] = desImgFile.getPath();
-                i++;
-                for (String imgFavor: imageListFavor){
-                    if(imgFavor.equals(imgFile.getPath())){
-                        imageListFavor.remove(imgFile.getPath());
-                        imageListFavor.add(desImgFile.getPath());
-                        break;
-                    }
+                if(listAlbumImg.add(img.getPath())) {
+                    list.add(img.getPath());
                 }
-
             }
-            DataLocalManager.setListImg(imageListFavor);
-            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
+
+            LocalDataManager.setAlbumListImg(album_name, listAlbumImg);
+
             return null;
         }
 

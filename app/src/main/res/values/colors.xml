@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="background">#FFF2F6F7</color>
     <color name="colorPrimary">#FF3F51B5</color>
     <color name="colorPrimaryRipple">#423F51B5</color>
-
-    <!-- Colors for dark theme -->
     <color name="darkSurface">#FF121212</color>
     <color name="darkBackground">#FF121212</color>
     <color name="darkOnPrimary">#FF1F1F1F</color>
@@ -19,5 +15,4 @@
     <color name="darkOnSurface">#FFFFFFFF</color>
     <color name="darkTextColorPrimary">#FFFFFFFF</color>
     <color name="purpleOff">#443C68</color>
-
 </resources>
