@@ -173,6 +173,7 @@ public class PhotoFragment extends Fragment {
     public ArrayList<String> getListImg(){
         List<Image> imageList = GetAllPhotoFromGallery.getAllImageFromGallery(getContext());
         long hash = 0;
+        System.out.println("PTFrag getListImg [0]: " + imageList.get(0));
         Map<Long,ArrayList<String>> map = new HashMap<Long,ArrayList<String>>();
         for (Image img: imageList) {
             Bitmap bitmap = BitmapFactory.decodeFile(img.getPath());

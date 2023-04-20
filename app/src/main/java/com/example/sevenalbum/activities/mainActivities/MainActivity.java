@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.adapters.ViewPagerAdapter;
+import com.example.sevenalbum.utility.GetAllPhotoFromGallery;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
@@ -121,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         permission.checkResult(requestCode, permissions, grantResults);
+        GetAllPhotoFromGallery.refreshAllImages();
+
     }
 
 }

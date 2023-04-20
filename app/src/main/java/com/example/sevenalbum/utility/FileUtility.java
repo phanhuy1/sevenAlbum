@@ -48,7 +48,10 @@ public class FileUtility {
         try {
 
             //create output directory if it doesn't exist
+
+//            boolean a = new File(String.valueOf(path)).delete();
             File dir = new File (outputPath);
+            System.out.println("FU: "+dir.getPath());
             if (!dir.exists())
             {
                 dir.mkdirs();
@@ -56,7 +59,9 @@ public class FileUtility {
 
 
             in = new FileInputStream(inputPath);
-            out = new FileOutputStream(outputPath + File.separator +inputFile);
+            String root = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).toString() + File.separator + inputFile;
+            System.out.println("root " + root);
+            out = new FileOutputStream(root);
 
             byte[] buffer = new byte[1024];
             int read;
@@ -74,14 +79,14 @@ public class FileUtility {
             // delete the original file
             Path path = Paths.get(inputPath);
             System.out.println(path);
-            boolean a = new File(String.valueOf(path)).delete();
-            System.out.println(a);
+            boolean a = new File(inputPath).delete();
+            System.out.println("File Utility IO: " + a);
 
 
         }
 
         catch (FileNotFoundException fnfe1) {
-            Log.e("tag", fnfe1.getMessage());
+            Log.e("tag2", fnfe1.getMessage());
         }
         catch (Exception e) {
             Log.e("tag", e.getMessage());
