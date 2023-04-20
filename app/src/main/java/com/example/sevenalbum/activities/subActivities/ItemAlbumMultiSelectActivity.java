@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.adapters.AlbumSheetAdapter;
 import com.example.sevenalbum.adapters.ImageSelectAdapter;
 import com.example.sevenalbum.models.Album;
@@ -37,7 +38,10 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements ListTransInterface, SubInterface {
     private ArrayList<String> myAlbum;
@@ -90,8 +94,11 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
 
         toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
         toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
+        toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setIcon(R.drawable.ic_remove_from_album_disable);
         toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
         toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
+        toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setEnabled(false);
+
 
         // Show back button
         toolbar_item_album.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
@@ -113,6 +120,9 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
                         break;
                     case R.id.menu_move_image:
                         moveEvent();
+                        break;
+                    case R.id.menu_remove_from_album:
+                        removeFromAlbumEvent();
                         break;
                 }
 
@@ -150,6 +160,16 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
         }
     }
 
+    private void removeFromAlbumEvent() {
+        List<String> albumListImg = DataLocalManager.getAlbumListImg(album_name);
+        listImageSelected.forEach(img -> {
+            albumListImg.remove(img.getPath());
+        });
+        DataLocalManager.setAlbumListImgByList(album_name, albumListImg);
+        setResult(RESULT_OK);
+        finish();
+    }
+
     private void setData() {
         myAlbum = intent.getStringArrayListExtra("data_1");
     }
@@ -169,32 +189,29 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
     @Override
     public void addList(Image img) {
         listImageSelected.add(img);
-        if (listImageSelected != null && listImageSelected.size() > 0) {
-            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move);
-            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete);
-            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(true);
-            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(true);
-        }
-        else {
-            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
-            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
-            toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
-            toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
-        }
+        toggleMenuItem();
     }
     public void removeList(Image img) {
         listImageSelected.remove(img);
+        toggleMenuItem();
+    }
+
+    private void toggleMenuItem() {
         if (listImageSelected != null && listImageSelected.size() > 0) {
             toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move);
             toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete);
+            toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setIcon(R.drawable.ic_remove_from_album);
             toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(true);
             toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(true);
+            toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setEnabled(true);
         }
         else {
             toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setIcon(R.drawable.ic_move_disable);
             toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setIcon(R.drawable.ic_delete_disable);
+            toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setIcon(R.drawable.ic_remove_from_album_disable);
             toolbar_item_album.getMenu().findItem(R.id.menu_move_image).setEnabled(false);
             toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
+            toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setEnabled(false);
         }
     }
 
@@ -236,18 +253,40 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
             List<String> ref = new ArrayList<>();
             List<Album> listAlbum = new ArrayList<>();
 
+            List<String> albumListNames = DataLocalManager.getListAlbum();
+            HashMap<String, Image> imageHashMap = new HashMap<String, Image>();
             for (int i = 0; i < listImage.size(); i++) {
-                String[] _array = listImage.get(i).getThumb().split("/");
-                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
-                String _name = _array[_array.length - 2];
-                if (!ref.contains(_pathFolder)) {
-                    ref.add(_pathFolder);
-                    Album token = new Album(listImage.get(i), _name);
-                    token.setPathFolder(_pathFolder);
-                    token.addItem(listImage.get(i));
-                    listAlbum.add(token);
-                } else {
-                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
+                imageHashMap.put(listImage.get(i).getPath(), listImage.get(i));
+//                String[] _array = listImage.get(i).getThumb().split("/");
+//                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
+//                String _name = _array[_array.length - 2];
+//                if (!ref.contains(_pathFolder)) {
+//                    ref.add(_pathFolder);
+//                    Album token = new Album(listImage.get(i), _name);
+//                    token.setPathFolder(_pathFolder);
+//                    token.addItem(listImage.get(i));
+//                    listAlbum.add(token);
+//                } else {
+//                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
+//                }
+            }
+            for (String album : albumListNames) {
+                if (album.equals(album_name)) {
+                    continue;
+                }
+
+                List<String> albumList = DataLocalManager.getAlbumListImg(album);
+                if (albumList == null) {
+                    continue;
+                }
+
+                if (albumList.size() > 0) {
+                    listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+
+                    for (int i = 1; i < albumList.size(); i++) {
+                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                    }
                 }
             }
 
@@ -269,18 +308,24 @@ public class ItemAlbumMultiSelectActivity extends AppCompatActivity implements L
 
         @Override
         protected Void doInBackground(Void... voids) {
-            String[] paths = new String[listImageSelected.size()];
-            int i =0;
+            //            String[] paths = new String[listImageSelected.size()];
+            Set<String> listAlbumImg = new HashSet<String>(DataLocalManager.getAlbumListImg(album.getName()));
+            List<String> currentListAlbumImg = DataLocalManager.getAlbumListImg(album_name);
+//            int i =0;
             for (Image img :listImageSelected){
-                File imgFile = new File(img.getPath());
-                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
-                list.add(desImgFile.getPath());
-                imgFile.renameTo(desImgFile);
-                imgFile.deleteOnExit();
-                paths[i] = desImgFile.getPath();
-                i++;
+//                File imgFile = new File(img.getPath());
+//                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
+//                imgFile.renameTo(desImgFile);
+//                imgFile.deleteOnExit();
+//                paths[i] = desImgFile.getPath();
+//                i++;
+                currentListAlbumImg.remove(img.getPath());
+                listAlbumImg.add(img.getPath());
             }
-            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
+            DataLocalManager.setAlbumListImgByList(album_name, currentListAlbumImg);
+            DataLocalManager.setAlbumListImg(album.getName(), listAlbumImg);
+
+//            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;
         }
 

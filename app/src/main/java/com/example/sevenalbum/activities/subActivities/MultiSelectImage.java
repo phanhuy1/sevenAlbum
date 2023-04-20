@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.activities.mainActivities.SlideShowActivity;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.adapters.AlbumSheetAdapter;
 import com.example.sevenalbum.adapters.CategoryMultiAdapter;
 import com.example.sevenalbum.models.Album;
@@ -40,7 +41,10 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MultiSelectImage extends AppCompatActivity implements ListTransInterface, SubInterface {
     private RecyclerView ryc_list_album;
@@ -292,15 +296,22 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
                 Log.e("File-no-exist",directory.getPath());
             }
             String[] paths = new String[listImageSelected.size()];
+            List<String> albumListImg = new ArrayList<String>();
             int i =0;
             for (Image img :listImageSelected){
                 File imgFile = new File(img.getPath());
+                albumListImg.add(imgFile.getPath());
+
                 File desImgFile = new File(albumPath,albumName+"_"+imgFile.getName());
                 imgFile.renameTo(desImgFile);
                 imgFile.deleteOnExit();
                 paths[i] = desImgFile.getPath();
                 i++;
             }
+            DataLocalManager.setAlbumListImgByList(albumName, albumListImg);
+            List<String> album = DataLocalManager.getListAlbum();
+            album.add(albumName);
+            DataLocalManager.setAlbumByList(album);
             MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;
         }
@@ -341,18 +352,35 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
             List<String> ref = new ArrayList<>();
             List<Album> listAlbum = new ArrayList<>();
 
+            List<String> albumListNames = DataLocalManager.getListAlbum();
+            HashMap<String, Image> imageHashMap = new HashMap<String, Image>();
             for (int i = 0; i < listImage.size(); i++) {
-                String[] _array = listImage.get(i).getThumb().split("/");
-                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
-                String _name = _array[_array.length - 2];
-                if (!ref.contains(_pathFolder)) {
-                    ref.add(_pathFolder);
-                    Album token = new Album(listImage.get(i), _name);
-                    token.setPathFolder(_pathFolder);
-                    token.addItem(listImage.get(i));
-                    listAlbum.add(token);
-                } else {
-                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
+                imageHashMap.put(listImage.get(i).getPath(), listImage.get(i));
+//                String[] _array = listImage.get(i).getThumb().split("/");
+//                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
+//                String _name = _array[_array.length - 2];
+//                if (!ref.contains(_pathFolder)) {
+//                    ref.add(_pathFolder);
+//                    Album token = new Album(listImage.get(i), _name);
+//                    token.setPathFolder(_pathFolder);
+//                    token.addItem(listImage.get(i));
+//                    listAlbum.add(token);
+//                } else {
+//                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
+//                }
+            }
+            for (String album : albumListNames) {
+                List<String> albumList = DataLocalManager.getAlbumListImg(album);
+                if (albumList == null) {
+                    continue;
+                }
+                if (albumList.size() > 0) {
+                    listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+
+                    for (int i = 1; i < albumList.size(); i++) {
+                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                    }
                 }
             }
 
@@ -368,17 +396,21 @@ public class MultiSelectImage extends AppCompatActivity implements ListTransInte
         @Override
         protected Void doInBackground(Void... voids) {
 
-            String[] paths = new String[listImageSelected.size()];
-            int i =0;
+//            String[] paths = new String[listImageSelected.size()];
+            Set<String> listAlbumImg = new HashSet<String>(DataLocalManager.getAlbumListImg(album.getName()));
+//            int i =0;
             for (Image img :listImageSelected){
-                File imgFile = new File(img.getPath());
-                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
-                imgFile.renameTo(desImgFile);
-                imgFile.deleteOnExit();
-                paths[i] = desImgFile.getPath();
-                i++;
+//                File imgFile = new File(img.getPath());
+//                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
+//                imgFile.renameTo(desImgFile);
+//                imgFile.deleteOnExit();
+//                paths[i] = desImgFile.getPath();
+//                i++;
+                listAlbumImg.add(img.getPath());
             }
-            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
+            DataLocalManager.setAlbumListImg(album.getName(), listAlbumImg);
+
+//            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;
         }
 

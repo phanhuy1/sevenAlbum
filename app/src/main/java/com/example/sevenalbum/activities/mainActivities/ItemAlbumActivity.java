@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.activities.subActivities.ItemAlbumMultiSelectActivity;
 import com.example.sevenalbum.activities.subActivities.ItemSecretMultiSelectActivity;
 import com.example.sevenalbum.adapters.ItemAlbumAdapter;
@@ -30,6 +31,7 @@ import com.example.sevenalbum.adapters.ItemAlbumAdapter3;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ItemAlbumActivity extends AppCompatActivity {
     private ArrayList<String> myAlbum;
@@ -206,20 +208,25 @@ public class ItemAlbumActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... voids) {
+            List<String> albumListImg = DataLocalManager.getAlbumListImg(album_name);
             if (myAlbum != null) {
                 for (int i = 0; i < myAlbum.size(); i++) {
-                    File file = new File(myAlbum.get(i));
-                    if (!file.exists()) {
+                    if (!albumListImg.contains(myAlbum.get(i))) {
                         myAlbum.remove(i);
                     }
                 }
             }
+//                    File file = new File(myAlbum.get(i));
+//                    if (!file.exists()) {
+//                        myAlbum.remove(i);
+//                    }
             return null;
         }
 
         @Override
         protected void onPostExecute(Void unused) {
             super.onPostExecute(unused);
+            ryc_list_album.setAdapter(new ItemAlbumAdapter(myAlbum));
         }
     }
 

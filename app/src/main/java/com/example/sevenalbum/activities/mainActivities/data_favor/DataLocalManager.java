@@ -49,6 +49,13 @@ public class DataLocalManager {
         DataLocalManager.getInstance().mySharedPreferences.putStringSet(albumName, setListImg);
     }
 
+    public static void setAlbumListImg(String albumName, Set<String> listImg) {
+
+        DataLocalManager.getInstance().mySharedPreferences.deleteListFavor(albumName);
+
+        DataLocalManager.getInstance().mySharedPreferences.putStringSet(albumName, listImg);
+    }
+
     public static void setAlbumByList(List<String> album){
         Set<String> setListAlbum = new HashSet<>();
 
