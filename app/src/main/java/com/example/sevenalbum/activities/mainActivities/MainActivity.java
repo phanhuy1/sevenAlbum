@@ -123,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         permission.checkResult(requestCode, permissions, grantResults);
         GetAllPhotoFromGallery.refreshAllImages();
-
     }
 
 }
