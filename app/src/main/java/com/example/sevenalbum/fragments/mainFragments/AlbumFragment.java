@@ -197,11 +197,13 @@ public class AlbumFragment extends Fragment {
             if (albumList == null) {
                 continue;
             }
-            listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
-            listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+            if (albumList.size() > 0) {
+                listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
 
-            for (int i = 1; i < albumList.size(); i++) {
-                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                for (int i = 1; i < albumList.size(); i++) {
+                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                }
             }
         }
 
