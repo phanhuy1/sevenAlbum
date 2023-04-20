@@ -306,7 +306,8 @@ public class PictureActivity extends AppCompatActivity implements PictureInterfa
                                 else{
                                     FileUtility fu = new FileUtility();
                                     File img = new File(imgPath);
-                                    System.out.println("hello"+ img.getPath());
+                                    System.out.println("PicAct imgPath: "+ img.getPath());
+                                    System.out.println("PicAct imgName: " + img.getName());
                                     if(!(scrPath+File.separator+img.getName()).equals(imgPath)){
                                         fu.moveFile(imgPath,img.getName(),scrPath);
                                         Toast.makeText(PictureActivity.this, "Your image is hidden", Toast.LENGTH_SHORT).show();
