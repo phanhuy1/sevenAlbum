@@ -16,6 +16,8 @@ public class DataLocalManager {
 
     private static final String PREF_ALBUM_LIST="PREF_ALBUM_LIST";
 
+    private static final String PREF_INTERNAL_ALBUM_LIST="PREF_INTERNAL_ALBUM_LIST";
+
     private static DataLocalManager instance;
     private MySharedPreferences mySharedPreferences;
 
@@ -68,6 +70,21 @@ public class DataLocalManager {
 
     }
 
+    public static void setInternalAlbumByList(List<String> album){
+        Set<String> setListAlbum = new HashSet<>();
+
+        for (String i: album) {
+            setListAlbum.add(i);
+        }
+        DataLocalManager.getInstance().mySharedPreferences.deleteListFavor(PREF_INTERNAL_ALBUM_LIST);
+
+        DataLocalManager.getInstance().mySharedPreferences.putStringSet(PREF_INTERNAL_ALBUM_LIST, setListAlbum);
+
+    }
+
+
+
+
     public static void setListImgByList(List<String> listImg){
         Set<String> setListImg = new HashSet<>();
 
@@ -111,6 +128,19 @@ public class DataLocalManager {
 
     public static List<String> getListAlbum(){
         Set<String> strJsonArray = DataLocalManager.getInstance().mySharedPreferences.getStringSet(PREF_ALBUM_LIST);
+
+        List<String> listAlbum = new ArrayList<>();
+
+        for (String i: strJsonArray) {
+            listAlbum.add(i);
+        }
+
+
+        return listAlbum;
+    }
+
+    public static List<String> getListInternalAlbum(){
+        Set<String> strJsonArray = DataLocalManager.getInstance().mySharedPreferences.getStringSet(PREF_INTERNAL_ALBUM_LIST);
 
         List<String> listAlbum = new ArrayList<>();
 

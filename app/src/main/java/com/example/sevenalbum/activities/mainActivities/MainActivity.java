@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void ifCancelledAndCannotRequest(Activity activity) {
             }
         };
+
         permission.checkAndRequestPermissions(this);
         setUpViewPager();
 

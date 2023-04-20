@@ -208,11 +208,19 @@ public class ItemAlbumActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... voids) {
+            List<String> listInternalAlbum = DataLocalManager.getListInternalAlbum();
+            if (listInternalAlbum.contains(album_name)) {
+                return null;
+            }
             List<String> albumListImg = DataLocalManager.getAlbumListImg(album_name);
             if (myAlbum != null) {
-                for (int i = 0; i < myAlbum.size(); i++) {
+                int i = 0;
+                while (i < myAlbum.size()) {
                     if (!albumListImg.contains(myAlbum.get(i))) {
                         myAlbum.remove(i);
+                    }
+                    else {
+                        i++;
                     }
                 }
             }

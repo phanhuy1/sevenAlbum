@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import com.example.sevenalbum.activities.mainActivities.data_favor.DataLocalManager;
 import com.example.sevenalbum.models.Image;
 
 public class GetAllPhotoFromGallery {
@@ -73,6 +74,8 @@ public class GetAllPhotoFromGallery {
             dateIndex = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATE_TAKEN);
             Calendar myCal = Calendar.getInstance();
             SimpleDateFormat formatter = new SimpleDateFormat("EEE, dd-MM-yyyy");
+
+            List<String> listInternalAlbum = new ArrayList<String>();
             while (cursor.moveToNext()) {
                 try {
                     absolutePathImage = cursor.getString(columnIndexData);
@@ -89,6 +92,9 @@ public class GetAllPhotoFromGallery {
                 String dateText = formatter.format(myCal.getTime());
                 Image image = new Image();
                 image.setPath(absolutePathImage);
+
+                String[] tempData = absolutePathImage.split(File.separator);
+                listInternalAlbum.add(tempData[tempData.length - 2]);
 
                 image.setThumb(thumbnail);
                 image.setDateTaken(dateText);
@@ -129,6 +135,7 @@ public class GetAllPhotoFromGallery {
                     break;                  // I don't want to load 10 000 photos at once.
                 }
             }
+            DataLocalManager.setInternalAlbumByList(listInternalAlbum);
             cursor.close(); // Android Studio suggestion
             allImages = listImage;
             addNewestImagesOnly = false;
