@@ -33,7 +33,7 @@ public class FindAllImagesFromDevice {
     public static void updateNewImages(){
         addNewestImagesOnly = true;
     }
-    public static void removeImageFromAllImages(String path) {  // remove deleted photo from "database"
+    public static void removeImageFromAllImages(String path) {
         Log.d("Seven-Album","FindAllImagesFromDevice -> Trying to remove "+ path);
         for(int i=0;i<allImages.size();i++) {
             if(allImages.get(i).getPath().equals(path)) {
@@ -104,7 +104,7 @@ public class FindAllImagesFromDevice {
                 Log.d("Path", image.getPath());
                 Log.d("Path", listImage.size() + "");
                 if(addNewestImagesOnly){
-                    boolean iscontained = false; // in the "database"
+                    boolean iscontained = false;
                     for(Image i : allImages){
                         if(i.getPath().equals(image.getPath())){
                             iscontained = true;
@@ -115,14 +115,14 @@ public class FindAllImagesFromDevice {
                         Log.d("Seven-Album","GetAllPhotosFromGallery -> Image already in allImages. Breaking");
                         addNewestImagesOnly = false;
                         allImagesPresent = true;
-                        cursor.close(); // Android Studio suggestion
+                        cursor.close(); 
                         return allImages;
                     } else{
                         Log.d("Seven-Album", allImages.size() + "");
                         if(allImages.size()>1200){
                             addNewestImagesOnly = false;
                             allImagesPresent = true;
-                            cursor.close(); // Android Studio suggestion
+                            cursor.close();
                             return allImages;
                         }
                         allImages.add(0, image);
@@ -133,12 +133,12 @@ public class FindAllImagesFromDevice {
                     }
                 }
 
-                if(listImage.size()>128) { // Just for testing.
-                    break;                  // I don't want to load 10 000 photos at once.
+                if(listImage.size()>128) { 
+                    break;                 
                 }
             }
             LocalDataManager.setInternalAlbumByList(listInternalAlbum);
-            cursor.close(); // Android Studio suggestion
+            cursor.close(); 
             allImages = listImage;
             addNewestImagesOnly = false;
             allImagesPresent = true;

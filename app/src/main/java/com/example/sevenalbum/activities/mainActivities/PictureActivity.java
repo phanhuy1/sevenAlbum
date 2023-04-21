@@ -290,8 +290,6 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
 
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
-                                // Do nothing
                                 dialog.dismiss();
                             }
                         });

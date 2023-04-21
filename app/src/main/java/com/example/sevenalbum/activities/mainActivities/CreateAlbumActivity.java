@@ -87,7 +87,7 @@ public class CreateAlbumActivity extends AppCompatActivity implements ItemSelect
         ImageSelectAdapter imageAdapter = new ImageSelectAdapter(this);
         imageAdapter.setListTransInterface(this);
         imageAdapter.setData(listImage);
-        rycAddAlbum.setLayoutManager(new GridLayoutManager(this, 4));
+        rycAddAlbum.setLayoutManager(new GridLayoutManager(this, 3));
         rycAddAlbum.setAdapter(imageAdapter);
     }
 

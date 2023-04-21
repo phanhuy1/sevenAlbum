@@ -79,7 +79,6 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
     }
 
     private void events() {
-        // Toolbar events
         toolbar_item_album.inflateMenu(R.menu.album_multi_select_top_menu);
         toolbar_item_album.setTitle(album_name);
 
@@ -90,8 +89,6 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
         toolbar_item_album.getMenu().findItem(R.id.menuMultiDelete).setEnabled(false);
         toolbar_item_album.getMenu().findItem(R.id.menu_remove_from_album).setEnabled(false);
 
-
-        // Show back button
         toolbar_item_album.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
         toolbar_item_album.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,8 +96,6 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
                 finish();
             }
         });
-
-        // Toolbar options
         toolbar_item_album.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {

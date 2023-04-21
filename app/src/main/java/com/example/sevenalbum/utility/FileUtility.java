@@ -1,6 +1,4 @@
 package com.example.sevenalbum.utility;
-//https://stackoverflow.com/questions/4178168/how-to-programmatically-move-copy-and-delete-files-and-directories-on-sd
-
 import android.os.Environment;
 import android.util.Log;
 
@@ -34,7 +32,6 @@ public class FileUtility {
     }
     public void deleteFile(String Path) {
         try {
-            // delete the original file
             new File(Path).delete();
         }
         catch (Exception e) {
@@ -46,10 +43,6 @@ public class FileUtility {
         InputStream in = null;
         OutputStream out = null;
         try {
-
-            //create output directory if it doesn't exist
-
-//            boolean a = new File(String.valueOf(path)).delete();
             File dir = new File (outputPath);
             System.out.println("FU: "+dir.getPath());
             if (!dir.exists())
@@ -71,12 +64,9 @@ public class FileUtility {
             in.close();
             in = null;
 
-            // write the output file
             out.flush();
             out.close();
             out = null;
-
-            // delete the original file
             Path path = Paths.get(inputPath);
             System.out.println(path);
             boolean a = new File(inputPath).delete();
@@ -98,8 +88,6 @@ public class FileUtility {
         InputStream in = null;
         OutputStream out = null;
         try {
-
-            //create output directory if it doesn't exist
             File dir = new File (outputPath);
             if (!dir.exists())
             {
@@ -118,7 +106,6 @@ public class FileUtility {
             in.close();
             in = null;
 
-            // write the output file (You have now copied the file)
             out.flush();
             out.close();
             out = null;

@@ -28,7 +28,6 @@ import java.util.Set;
 public class AlbumElementActivity extends AppCompatActivity {
     private ArrayList<String> myAlbum;
     private String path_folder ;
-    private RecyclerView ryc_album;
     private RecyclerView ryc_list_album;
     private Intent intent;
     private String album_name;
@@ -96,14 +95,12 @@ public class AlbumElementActivity extends AppCompatActivity {
     }
 
     private void events() {
-        // Toolbar events
         toolbar_item_album.inflateMenu(R.menu.album_element_top_menu);
         toolbar_item_album.setTitle(album_name);
         if(isAlbum == 0) {
             toolbar_item_album.getMenu().findItem(R.id.menu_add_image).setVisible(false);
         } else
             toolbar_item_album.getMenu().findItem(R.id.menu_add_image).setVisible(true);
-        // Show back button
         toolbar_item_album.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
         toolbar_item_album.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +109,6 @@ public class AlbumElementActivity extends AppCompatActivity {
             }
         });
 
-        // Toolbar options
         toolbar_item_album.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {

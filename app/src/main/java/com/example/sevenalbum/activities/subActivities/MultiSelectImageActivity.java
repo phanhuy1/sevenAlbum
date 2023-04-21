@@ -70,7 +70,6 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
 
     private void addEvents() {
         setRyc();
-        // Toolbar events
         eventToolBar();
     }
 
@@ -80,7 +79,6 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MultiSelectImageActivity.this, RecyclerView.VERTICAL, false);
         ryc_list_album.setLayoutManager(linearLayoutManager);
 
-        //Set adapter
         MyAsyncTask myAsyncTask = new MyAsyncTask();
         myAsyncTask.execute();
     }
@@ -152,8 +150,6 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
 
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
-                // Do nothing
                 dialog.dismiss();
             }
         });
@@ -180,10 +176,6 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
             categoryList.add(new Category(imageList.get(0).getDateTaken(),new ArrayList<>()));
             categoryList.get(categoryCount).addListImage(imageList.get(0));
             for(int i=1;i<imageList.size();i++){
-//                if(!imageList.get(i).getDateTaken().equals(imageList.get(i-1).getDateTaken())){
-//                    categoryList.add(new Category(imageList.get(i).getDateTaken(),new ArrayList<>()));
-//                    categoryCount++;
-//                }
                 categoryList.get(categoryCount).addListImage(imageList.get(i));
             }
             return categoryList;
@@ -350,22 +342,11 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
 
         @Override
         protected Void doInBackground(Void... voids) {
-
-//            String[] paths = new String[listImageSelected.size()];
             Set<String> listAlbumImg = new HashSet<String>(LocalDataManager.getAlbumListImg(album.getName()));
-//            int i =0;
             for (Image img :listImageSelected){
-//                File imgFile = new File(img.getPath());
-//                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
-//                imgFile.renameTo(desImgFile);
-//                imgFile.deleteOnExit();
-//                paths[i] = desImgFile.getPath();
-//                i++;
                 listAlbumImg.add(img.getPath());
             }
             LocalDataManager.setAlbumListImg(album.getName(), listAlbumImg);
-
-//            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;
         }
 

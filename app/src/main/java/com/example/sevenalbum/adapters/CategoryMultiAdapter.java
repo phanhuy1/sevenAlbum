@@ -44,8 +44,6 @@ public class CategoryMultiAdapter extends RecyclerView.Adapter<CategoryMultiAdap
         if (category == null)
             return;
 
-//        holder.tvNameCategory.setText(category.getNameCategory());
-
         GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 3);
         holder.rcvPictures.setLayoutManager(gridLayoutManager);
 
@@ -67,7 +65,6 @@ public class CategoryMultiAdapter extends RecyclerView.Adapter<CategoryMultiAdap
     }
 
     public class CategoryViewHolder extends RecyclerView.ViewHolder{
-//        private TextView tvNameCategory;
         private RecyclerView rcvPictures;
 
         public CategoryViewHolder(@NonNull View itemView) {

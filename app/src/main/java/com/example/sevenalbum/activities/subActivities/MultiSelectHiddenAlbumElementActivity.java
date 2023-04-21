@@ -72,11 +72,8 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
 
 
     private void events() {
-        // Toolbar events
         toolbar_item_album.inflateMenu(R.menu.hidden_album_multi_select_top_menu);
         toolbar_item_album.setTitle(album_name);
-
-        // Show back button
         toolbar_item_album.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
         toolbar_item_album.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +81,6 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
                 finish();
             }
         });
-
-        // Toolbar options
         toolbar_item_album.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
@@ -138,8 +133,6 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
             Uri targetUri = Uri.parse("file://" + listImageSelected.get(i).getPath());
             File file = new File(targetUri.getPath());
             if (file.exists()){
-                //GetAllPhotoFromGallery.removeImageFromAllImages(targetUri.getPath()); This is secret
-                // I can't easily test it TODO/FIXME
                 file.delete();
             }
         }

@@ -64,7 +64,6 @@ public class AlbumElementAdapter extends RecyclerView.Adapter<AlbumElementAdapte
         }
 
         public void onBind(String img, int pos) {
-            // set ảnh cho imgPhoto bằng thư viện Glide
             Glide.with(context).load(img).into(imgPhoto);
             imgPhoto.setOnClickListener(new View.OnClickListener() {
                 @Override

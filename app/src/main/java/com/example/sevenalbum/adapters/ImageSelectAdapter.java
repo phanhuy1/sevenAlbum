@@ -61,7 +61,6 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
             return;
         }
 
-        // set ảnh cho imgPhoto bằng thư viện Glide
         Glide.with(context).load(image.getThumb()).into(holder.imgPhoto);
 
         holder.imgPhoto.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +99,6 @@ public class ImageSelectAdapter extends RecyclerView.Adapter<ImageSelectAdapter.
 
 
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object){
-        // Remove view
         container.removeView((View) object);
     }
 }

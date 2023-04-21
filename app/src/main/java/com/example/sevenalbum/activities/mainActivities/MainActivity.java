@@ -29,12 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
-        // Hide status bar
-
-        /*getSupportActionBar();*/
         setContentView(R.layout.main_activity_layout);
-
-
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         viewPager = findViewById(R.id.view_pager);
@@ -78,10 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-    // Toolbar handle
-
 
     private void setUpViewPager() {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), getLifecycle());

@@ -60,7 +60,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     }
 
     public class CategoryViewHolder extends RecyclerView.ViewHolder{
-        // private TextView tvNameCategory;
         private RecyclerView rcvPictures;
 
         public CategoryViewHolder(@NonNull View itemView) {
