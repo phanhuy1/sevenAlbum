@@ -32,10 +32,10 @@ public class FindAllImagesFromDevice {
         addNewestImagesOnly = true;
     }
     public static void removeImageFromAllImages(String path) {  // remove deleted photo from "database"
-        Log.d("Seven-Album","GetAllPhotosFromGallery -> Trying to remove "+path);
+        Log.d("Seven-Album","FindAllImagesFromDevice -> Trying to remove "+path);
         for(int i=0;i<allImages.size();i++) {
             if(allImages.get(i).getPath().equals(path)) {
-                Log.d("Seven-Album","GetAllPhotosFromGallery -> Image removed from allImages. Breaking");
+                Log.d("Seven-Album","FindAllImagesFromDevice -> Image removed from allImages. Breaking");
                 allImages.remove(i);
                 break;
             }
@@ -43,7 +43,7 @@ public class FindAllImagesFromDevice {
     }
 
     public static final List<Image> getAllImageFromGallery(Context context) {
-        Log.d("Seven-Album","GetAllPhotoFromGallery->getAllImageFromGallery()");
+        Log.d("Seven-Album","FindAllImagesFromDevice->FindAllImagesFromDevice()");
         if(!allImagesPresent) { // Do not fetch photos between Activity switching.
                                 // MASSIVE performance improvement. Like over 9000.
             Uri uri;
