@@ -43,6 +43,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class MultiSelectImageActivity extends AppCompatActivity implements ItemSelectorManagerInterface, AlbumSelectorInterface {
     private RecyclerView ryc_list_album;
@@ -115,9 +116,9 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
                     case R.id.menuMultiDelete:
                         deleteEvents();
                         break;
-                    case R.id.menuSlideshow:
-                        slideShowEvents();
-                        break;
+//                    case R.id.menuSlideshow:
+//                        slideShowEvents();
+//                        break;
                     case R.id.menuAddAlbum:
                         openBottomDialog();
                         break;
@@ -172,6 +173,8 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
         List<Category> categoryList = new ArrayList<>();
         int categoryCount = 0;
         imageList = FindAllImagesFromDevice.getAllImageFromGallery(MultiSelectImageActivity.this);
+        Set<String> hiddenList = LocalDataManager.getListHidden();
+        imageList = imageList.stream().filter(e -> !hiddenList.contains(e.getPath())).collect(Collectors.toList());
 
         try {
             categoryList.add(new Category(imageList.get(0).getDateTaken(),new ArrayList<>()));
@@ -190,21 +193,13 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
 
     }
     private void deleteEvents() {
+        Set<String> deletedList = LocalDataManager.getListDeleted();
         for(int i=0;i<listImageSelected.size();i++) {
-            Uri targetUri = Uri.parse("file://" + listImageSelected.get(i).getPath());
-            File file = new File(targetUri.getPath());
-            if (file.exists()){
-                FindAllImagesFromDevice.removeImageFromAllImages(targetUri.getPath());
-                if(file.delete()) { // TODO Fails if photos were made in "Burst" mode (Asus Zenfone 6)
-                    FindAllImagesFromDevice.removeImageFromAllImages(targetUri.getPath());
-                }else {
-                    Log.d("deleteEvents","Failed to remove file "+targetUri.getPath());
-                }
-            }
-            if(i==listImageSelected.size()-1) {
-                finish();
-            };
+            FindAllImagesFromDevice.removeImageFromAllImages(listImageSelected.get(i).getPath());
+            deletedList.add(listImageSelected.get(i).getPath());
         }
+        LocalDataManager.setListDeleted(deletedList);
+        finish();
     }
     private void slideShowEvents() {
         Intent intent = new Intent(MultiSelectImageActivity.this, SlideshowActivity.class);
@@ -324,18 +319,6 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
             HashMap<String, Image> imageHashMap = new HashMap<String, Image>();
             for (int i = 0; i < listImage.size(); i++) {
                 imageHashMap.put(listImage.get(i).getPath(), listImage.get(i));
-//                String[] _array = listImage.get(i).getThumb().split("/");
-//                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
-//                String _name = _array[_array.length - 2];
-//                if (!ref.contains(_pathFolder)) {
-//                    ref.add(_pathFolder);
-//                    Album token = new Album(listImage.get(i), _name);
-//                    token.setPathFolder(_pathFolder);
-//                    token.addItem(listImage.get(i));
-//                    listAlbum.add(token);
-//                } else {
-//                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
-//                }
             }
             for (String album : albumListNames) {
                 List<String> albumList = LocalDataManager.getAlbumListImg(album);
@@ -343,11 +326,15 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
                     continue;
                 }
                 if (albumList.size() > 0) {
-                    listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
-                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
-
-                    for (int i = 1; i < albumList.size(); i++) {
-                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                    if (imageHashMap.get(albumList.get(0)) != null) {
+                        listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+    
+                        for (int i = 1; i < albumList.size(); i++) {
+                            if (imageHashMap.get(albumList.get(i)) != null) {
+                                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                            }
+                        }
                     }
                 }
             }

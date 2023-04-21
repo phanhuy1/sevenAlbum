@@ -94,9 +94,9 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
                     case R.id.menuMultiDelete:
                         deleteEvents();
                         break;
-                    case R.id.menuSlideshow:
-                        slideShowEvents();
-                        break;
+//                    case R.id.menuSlideshow:
+//                        slideShowEvents();
+//                        break;
                     case R.id.menu_restore:
                         restoreEvent();
                         break;

@@ -10,7 +10,9 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.models.Image;
@@ -32,7 +34,7 @@ public class FindAllImagesFromDevice {
         addNewestImagesOnly = true;
     }
     public static void removeImageFromAllImages(String path) {  // remove deleted photo from "database"
-        Log.d("Seven-Album","FindAllImagesFromDevice -> Trying to remove "+path);
+        Log.d("Seven-Album","FindAllImagesFromDevice -> Trying to remove "+ path);
         for(int i=0;i<allImages.size();i++) {
             if(allImages.get(i).getPath().equals(path)) {
                 Log.d("Seven-Album","FindAllImagesFromDevice -> Image removed from allImages. Breaking");
@@ -44,8 +46,9 @@ public class FindAllImagesFromDevice {
 
     public static final List<Image> getAllImageFromGallery(Context context) {
         Log.d("Seven-Album","FindAllImagesFromDevice->FindAllImagesFromDevice()");
-        if(!allImagesPresent) { // Do not fetch photos between Activity switching.
-                                // MASSIVE performance improvement. Like over 9000.
+        Set<String> deletedList = LocalDataManager.getListDeleted();
+        System.out.println("Hello " + deletedList.toString());
+        if(!allImagesPresent) {
             Uri uri;
             Cursor cursor;
             int columnIndexData, thumb, dateIndex;
@@ -125,7 +128,9 @@ public class FindAllImagesFromDevice {
                         allImages.add(0, image);
                     }
                 } else {
-                    listImage.add(image);
+                    if (deletedList.contains(image.getPath()) == false) {
+                        listImage.add(image);
+                    }
                 }
 
                 if(listImage.size()>128) { // Just for testing.

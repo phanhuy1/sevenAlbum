@@ -71,7 +71,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
         private final TextView txtCount_item_album;
         private Context context;
         private LinearLayout layout_bottom_delete;
-        private LinearLayout layout_bottom_slide_show;
+//        private LinearLayout layout_bottom_slide_show;
 
         public AlbumViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -107,7 +107,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
                 public boolean onLongClick(View view) {
                     openBottomDialog();
 
-                    txtPath.setText(ref.getPathFolder());
+                    txtPath.setText(ref.getName());
                     txtPath.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -116,12 +116,12 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
                         }
                     });
 
-                    layout_bottom_slide_show.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            slideShowEvents(ref);
-                        }
-                    });
+//                    layout_bottom_slide_show.setOnClickListener(new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View view) {
+//                            slideShowEvents(ref);
+//                        }
+//                    });
                     layout_bottom_delete.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -171,7 +171,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
         private void openBottomDialog() {
             View viewDialog = LayoutInflater.from(context).inflate(R.layout.bottom_sheet_album_layout, null);
             layout_bottom_delete = viewDialog.findViewById(R.id.layout_bottom_delete);
-            layout_bottom_slide_show = viewDialog.findViewById(R.id.layout_bottom_slide_show);
+//            layout_bottom_slide_show = viewDialog.findViewById(R.id.layout_bottom_slide_show);
             txtPath = viewDialog.findViewById(R.id.txtPath);
 
 

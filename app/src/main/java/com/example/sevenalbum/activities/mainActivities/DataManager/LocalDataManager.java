@@ -12,9 +12,15 @@ import java.util.Set;
 public class LocalDataManager {
     private static final String PREF_IMG_FAVOR = "PREF_IMG_FAVOR";
 
-    private static final String PREF_ALBUM_LIST="PREF_ALBUM_LIST";
+    private static final String PREF_ALBUM_LIST = "PREF_ALBUM_LIST";
 
-    private static final String PREF_INTERNAL_ALBUM_LIST="PREF_INTERNAL_ALBUM_LIST";
+    private static final String PREF_INTERNAL_ALBUM_LIST = "PREF_INTERNAL_ALBUM_LIST";
+    
+    private static final String PREF_DELETED_LIST = "PREF_DELETED_LIST";
+
+    private static final String PREF_HIDDEN_ALBUM = "PREF_HIDDEN_ALBUM";
+
+    private static final String PREF_EDITED_ALBUM = "PREF_EDITED_ALBUM";
 
     private static LocalDataManager instance;
 
@@ -30,6 +36,33 @@ public class LocalDataManager {
             instance = new LocalDataManager();
         }
         return instance;
+    }
+
+    public static void setListEdited(Set<String> listEdited) {
+        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_EDITED_ALBUM);
+        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_EDITED_ALBUM, listEdited);
+    }
+
+    public static Set<String> getListEdited() {
+        return LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_EDITED_ALBUM);
+    }
+
+    public static void setListDeleted(Set<String> listDeleted) {
+        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_DELETED_LIST);
+        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_DELETED_LIST, listDeleted);
+    }
+
+    public static Set<String> getListDeleted() {
+        return LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_DELETED_LIST);
+    }
+
+    public static void setListHidden(Set<String> listDeleted) {
+        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_HIDDEN_ALBUM);
+        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_HIDDEN_ALBUM, listDeleted);
+    }
+
+    public static Set<String> getListHidden() {
+        return LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_HIDDEN_ALBUM);
     }
 
     public static void setListImg(Set<String> listImg) {

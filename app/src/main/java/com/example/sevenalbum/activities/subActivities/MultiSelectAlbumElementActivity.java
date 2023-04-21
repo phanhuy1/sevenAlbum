@@ -137,18 +137,13 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
 
     }
     private void deleteEvents() {
+        Set<String> deletedList = LocalDataManager.getListDeleted();
         for(int i=0;i<listImageSelected.size();i++) {
-            Uri targetUri = Uri.parse("file://" + listImageSelected.get(i).getPath());
-            File file = new File(targetUri.getPath());
-            if (file.exists()){
-                FindAllImagesFromDevice.removeImageFromAllImages(targetUri.getPath());
-                file.delete();
-            }
-            if(i==listImageSelected.size()-1) {
-                setResult(RESULT_OK);
-                finish();
-            };
+            FindAllImagesFromDevice.removeImageFromAllImages(listImageSelected.get(i).getPath());
+            deletedList.add(listImageSelected.get(i).getPath());
         }
+        LocalDataManager.setListDeleted(deletedList);
+        finish();
     }
 
     private void removeFromAlbumEvent() {
@@ -241,42 +236,31 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
         }
         @NonNull
         private List<Album> getListAlbum(List<Image> listImage) {
-            List<String> ref = new ArrayList<>();
             List<Album> listAlbum = new ArrayList<>();
 
             List<String> albumListNames = LocalDataManager.getListAlbum();
             HashMap<String, Image> imageHashMap = new HashMap<String, Image>();
             for (int i = 0; i < listImage.size(); i++) {
                 imageHashMap.put(listImage.get(i).getPath(), listImage.get(i));
-//                String[] _array = listImage.get(i).getThumb().split("/");
-//                String _pathFolder = listImage.get(i).getThumb().substring(0, listImage.get(i).getThumb().lastIndexOf("/"));
-//                String _name = _array[_array.length - 2];
-//                if (!ref.contains(_pathFolder)) {
-//                    ref.add(_pathFolder);
-//                    Album token = new Album(listImage.get(i), _name);
-//                    token.setPathFolder(_pathFolder);
-//                    token.addItem(listImage.get(i));
-//                    listAlbum.add(token);
-//                } else {
-//                    listAlbum.get(ref.indexOf(_pathFolder)).addItem(listImage.get(i));
-//                }
             }
             for (String album : albumListNames) {
                 if (album.equals(album_name)) {
                     continue;
                 }
-
                 List<String> albumList = LocalDataManager.getAlbumListImg(album);
                 if (albumList == null) {
                     continue;
                 }
-
                 if (albumList.size() > 0) {
-                    listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
-                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
-
-                    for (int i = 1; i < albumList.size(); i++) {
-                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                    if (imageHashMap.get(albumList.get(0)) != null) {
+                        listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+    
+                        for (int i = 1; i < albumList.size(); i++) {
+                            if (imageHashMap.get(albumList.get(i)) != null) {
+                                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                            }
+                        }
                     }
                 }
             }
@@ -299,24 +283,14 @@ public class MultiSelectAlbumElementActivity extends AppCompatActivity implement
 
         @Override
         protected Void doInBackground(Void... voids) {
-            //            String[] paths = new String[listImageSelected.size()];
             Set<String> listAlbumImg = new HashSet<String>(LocalDataManager.getAlbumListImg(album.getName()));
             List<String> currentListAlbumImg = LocalDataManager.getAlbumListImg(album_name);
-//            int i =0;
             for (Image img :listImageSelected){
-//                File imgFile = new File(img.getPath());
-//                File desImgFile = new File(album.getPathFolder(),album.getName()+"_"+imgFile.getName());
-//                imgFile.renameTo(desImgFile);
-//                imgFile.deleteOnExit();
-//                paths[i] = desImgFile.getPath();
-//                i++;
                 currentListAlbumImg.remove(img.getPath());
                 listAlbumImg.add(img.getPath());
             }
             LocalDataManager.setAlbumListImgByList(album_name, currentListAlbumImg);
             LocalDataManager.setAlbumListImg(album.getName(), listAlbumImg);
-
-//            MediaScannerConnection.scanFile(getApplicationContext(),paths, null, null);
             return null;
         }
 

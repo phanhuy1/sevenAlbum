@@ -176,11 +176,11 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
                                 File file = new File(targetUri.getPath());
 
                                 if (file.exists()) {
-                                    if (file.delete()) {
-                                        FindAllImagesFromDevice.removeImageFromAllImages(targetUri.getPath());
-                                        Toast.makeText(PictureActivity.this, "Delete successfully!", Toast.LENGTH_SHORT).show();
-                                    } else
-                                        Toast.makeText(PictureActivity.this, "Delete failed!", Toast.LENGTH_SHORT).show();
+                                    Set<String> deletedList = LocalDataManager.getListDeleted();
+                                    deletedList.add(targetUri.getPath());
+                                    LocalDataManager.setListDeleted(deletedList);
+                                    FindAllImagesFromDevice.removeImageFromAllImages(targetUri.getPath());
+                                    Toast.makeText(PictureActivity.this, "Delete successfully!", Toast.LENGTH_SHORT).show();
                                 }
                                 finish();
                                 dialog.dismiss();
@@ -511,11 +511,15 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
                     continue;
                 }
                 if (albumList.size() > 0) {
-                    listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
-                    listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
-
-                    for (int i = 1; i < albumList.size(); i++) {
-                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                    if (imageHashMap.get(albumList.get(0)) != null) {
+                        listAlbum.add(new Album(imageHashMap.get(albumList.get(0)), album));
+                        listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(0)));
+    
+                        for (int i = 1; i < albumList.size(); i++) {
+                            if (imageHashMap.get(albumList.get(i)) != null) {
+                                listAlbum.get(listAlbum.size() - 1).addItem(imageHashMap.get(albumList.get(i)));
+                            }
+                        }
                     }
                 }
             }

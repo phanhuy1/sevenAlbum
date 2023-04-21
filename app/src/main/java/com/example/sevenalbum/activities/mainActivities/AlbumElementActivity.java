@@ -23,6 +23,7 @@ import com.example.sevenalbum.adapters.AlbumElementAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class AlbumElementActivity extends AppCompatActivity {
     private ArrayList<String> myAlbum;
@@ -131,9 +132,9 @@ public class AlbumElementActivity extends AppCompatActivity {
                             startActivityForResult(intent_mul, REQUEST_CODE_SECRET);
                         }
                         break;
-                    case R.id.album_item_slideshow:
-                        slideShowEvents();
-                        break;
+                    // case R.id.album_item_slideshow:
+                    //     slideShowEvents();
+                    //     break;
                     case R.id.menu_add_image:
 
                             Intent intent_add = new Intent(AlbumElementActivity.this, AddImageToAlbumActivity.class);
@@ -148,8 +149,9 @@ public class AlbumElementActivity extends AppCompatActivity {
                 return true;
             }
         });
-        if(isSecret == 1)
-        hideMenu();
+        if(isSecret == 1) {
+            hideMenu();
+        }
     }
 
     private void hideMenu() {
@@ -199,10 +201,11 @@ public class AlbumElementActivity extends AppCompatActivity {
                 return null;
             }
             List<String> albumListImg = LocalDataManager.getAlbumListImg(album_name);
+            Set<String> deletedList = LocalDataManager.getListDeleted();
             if (myAlbum != null) {
                 int i = 0;
                 while (i < myAlbum.size()) {
-                    if (!albumListImg.contains(myAlbum.get(i))) {
+                    if (!albumListImg.contains(myAlbum.get(i)) || deletedList.contains(myAlbum.get(i))) {
                         myAlbum.remove(i);
                     }
                     else {

@@ -18,7 +18,7 @@
             android:textSize="20sp"
             android:textStyle="normal"
             android:textColor="@color/black"
-            android:text="Path: "/>
+            android:text="Album: "/>
         <TextView
             android:id="@+id/txtPath"
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:textColor="@color/black"
             android:singleLine="true"/>
     </LinearLayout>
-    <LinearLayout
+    <!-- <LinearLayout
         android:id="@+id/layout_bottom_slide_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -51,7 +51,7 @@
             android:textSize="18sp"
             android:textStyle="normal"
             android:textColor="@color/black"/>
-    </LinearLayout>
+    </LinearLayout> -->
     <LinearLayout
         android:id="@+id/layout_bottom_delete"
         android:layout_width="match_parent"
@@ -61,11 +61,12 @@
             android:layout_marginStart="5dp"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/ic_delete"/>
+            android:backgroundTint="@color/black"
+            android:background="@drawable/ic_remove_from_album"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Delete"
+            android:text="Delete album"
             android:gravity="center|left"
             android:padding="8dp"
             android:layout_marginStart="20dp"

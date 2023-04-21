@@ -4,10 +4,10 @@
     <item android:id="@+id/menuMultiDelete"
         android:title="@string/delete"
         app:showAsAction="never"/>
-    <item
+    <!-- <item
         android:id="@+id/menuSlideshow"
         android:title="@string/slideshow"
-        app:showAsAction="never"/>
+        app:showAsAction="never"/> -->
     <item android:id="@+id/menu_restore"
         android:title="@string/restore"
         app:showAsAction="never"/>

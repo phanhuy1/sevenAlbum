@@ -21,7 +21,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 import com.example.sevenalbum.activities.mainActivities.AlbumElementActivity;
+import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.activities.subActivities.MultiSelectImageActivity;
 import com.example.sevenalbum.utility.FindAllImagesFromDevice;
 import com.example.sevenalbum.R;
@@ -128,6 +132,8 @@ public class PhotoFragment extends Fragment {
         List<Category> categoryList = new ArrayList<>();
         int categoryCount = 0;
         imageList = FindAllImagesFromDevice.getAllImageFromGallery(getContext());
+        Set<String> hiddenList = LocalDataManager.getListHidden();
+        imageList = imageList.stream().filter(e -> !hiddenList.contains(e.getPath())).collect(Collectors.toList());
 
         try {
             categoryList.add(new Category(imageList.get(0).getDateTaken(), new ArrayList<>()));

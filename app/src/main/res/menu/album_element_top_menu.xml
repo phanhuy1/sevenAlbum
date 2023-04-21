@@ -10,7 +10,7 @@
     <item android:id="@+id/menuChoose"
         android:title="@string/multiSelect"
         app:showAsAction="never"/>
-    <item android:id="@+id/album_item_slideshow"
+    <!-- <item android:id="@+id/album_item_slideshow"
         android:title="@string/slideshow"
-        app:showAsAction="never"/>
+        app:showAsAction="never"/> -->
 </menu>
