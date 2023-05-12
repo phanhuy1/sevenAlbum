@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sevenalbum.R;
+import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.activities.mainActivities.SlideshowActivity;
 import com.example.sevenalbum.adapters.ImageSelectAdapter;
 import com.example.sevenalbum.models.Image;
@@ -27,6 +28,7 @@ import com.example.sevenalbum.utility.ItemSelectorManagerInterface;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity implements ItemSelectorManagerInterface {
     private ArrayList<String> myAlbum;
@@ -86,12 +88,9 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
             public boolean onMenuItemClick(MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 switch (id) {
-                    case R.id.menuMultiDelete:
-                        deleteEvents();
-                        break;
-//                    case R.id.menuSlideshow:
-//                        slideShowEvents();
-//                        break;
+                   case R.id.menuSlideshow:
+                       slideShowEvents();
+                       break;
                     case R.id.menu_restore:
                         restoreEvent();
                         break;
@@ -126,18 +125,6 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
 
         AlertDialog alert = builder.create();
         alert.show();
-    }
-
-    private void deleteEvents() {
-        for(int i=0;i<listImageSelected.size();i++) {
-            Uri targetUri = Uri.parse("file://" + listImageSelected.get(i).getPath());
-            File file = new File(targetUri.getPath());
-            if (file.exists()){
-                file.delete();
-            }
-        }
-        setResult(RESULT_OK);
-        finish();
     }
     private void slideShowEvents() {
         Intent intent = new Intent(MultiSelectHiddenAlbumElementActivity.this, SlideshowActivity.class);
@@ -179,22 +166,11 @@ public class MultiSelectHiddenAlbumElementActivity extends AppCompatActivity imp
 
         @Override
         protected Void doInBackground(Void... voids) {
-            String outputPath = Environment.getExternalStorageDirectory()+File.separator+"DCIM" + File.separator + "Restore";
-            File folder = new File(outputPath);
-            if(!folder.exists()) {
-                folder.mkdir();
-            }
-            String[] paths = new String[listImageSelected.size()];
+            Set<String> hiddenList = LocalDataManager.getListHidden();
             for(int i =0;i<listImageSelected.size();i++) {
-                Image img = listImageSelected.get(i);
-                File imgFile = new File(img.getPath());
-                File desImgFile = new File(outputPath,imgFile.getName());
-                imgFile.renameTo(desImgFile);
-                imgFile.deleteOnExit();
-                desImgFile.getPath();
-                paths[i] = desImgFile.getPath();
+                hiddenList.remove(listImageSelected.get(i).getPath());
             }
-            MediaScannerConnection.scanFile(getApplicationContext(), paths, null, null);
+            LocalDataManager.setListHidden(hiddenList);
             return null;
         }
 

@@ -114,9 +114,9 @@ public class MultiSelectImageActivity extends AppCompatActivity implements ItemS
                     case R.id.menuMultiDelete:
                         deleteEvents();
                         break;
-//                    case R.id.menuSlideshow:
-//                        slideShowEvents();
-//                        break;
+                   case R.id.menuSlideshow:
+                       slideShowEvents();
+                       break;
                     case R.id.menuAddAlbum:
                         openBottomDialog();
                         break;

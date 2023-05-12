@@ -8,10 +8,10 @@
     <item android:id="@+id/menuAddAlbum"
         android:title="@string/addAlbum"
         app:showAsAction="never"/>
-    <!-- <item
+    <item
         android:id="@+id/menuSlideshow"
         android:title="@string/slideshow"
-        app:showAsAction="never"/> -->
+        app:showAsAction="never"/>
     <item
         android:id="@+id/menuHide"
         android:title="@string/hide_photo"

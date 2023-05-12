@@ -59,9 +59,9 @@ public class FavoriteFragment extends Fragment {
                     case R.id.album_item_search:
                         eventSearch(menuItem);
                         break;
-//                    case R.id.album_item_slideshow:
-//                        slideShowEvents();
-//                        break;
+                   case R.id.album_item_slideshow:
+                       slideShowEvents();
+                       break;
                 }
 
                 return true;

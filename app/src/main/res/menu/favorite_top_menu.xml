@@ -8,8 +8,8 @@
         app:showAsAction="ifRoom|collapseActionView"
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
-    <!-- <item android:id="@+id/album_item_slideshow"
+    <item android:id="@+id/album_item_slideshow"
         android:title="@string/slideshow"
-        app:showAsAction="never"/> -->
+        app:showAsAction="never"/>
 
 </menu>

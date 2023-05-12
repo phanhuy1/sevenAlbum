@@ -116,12 +116,6 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
                         }
                     });
 
-//                    layout_bottom_slide_show.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View view) {
-//                            slideShowEvents(ref);
-//                        }
-//                    });
                     layout_bottom_delete.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {

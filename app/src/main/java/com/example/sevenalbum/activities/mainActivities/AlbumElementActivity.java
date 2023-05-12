@@ -128,9 +128,9 @@ public class AlbumElementActivity extends AppCompatActivity {
                             startActivityForResult(intent_mul, REQUEST_CODE_SECRET);
                         }
                         break;
-                    // case R.id.album_item_slideshow:
-                    //     slideShowEvents();
-                    //     break;
+                    case R.id.album_item_slideshow:
+                        slideShowEvents();
+                        break;
                     case R.id.menu_add_image:
 
                             Intent intent_add = new Intent(AlbumElementActivity.this, AddImageToAlbumActivity.class);
