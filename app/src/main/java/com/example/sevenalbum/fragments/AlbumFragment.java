@@ -71,9 +71,9 @@ public class AlbumFragment extends Fragment {
             public boolean onMenuItemClick(MenuItem item) {
                 int id = item.getItemId();
                 switch (id) {
-                    case R.id.menuSearch:
-                        eventSearch(item);
-                        break;
+//                    case R.id.menuSearch:
+//                        eventSearch(item);
+//                        break;
                     case R.id.menuAdd:
                         openCreateAlbumActivity();
                         break;
@@ -222,6 +222,7 @@ public class AlbumFragment extends Fragment {
 
         @Override
         protected Void doInBackground(Void... voids) {
+            FindAllImagesFromDevice.refreshAllImages();
             listImage = FindAllImagesFromDevice.getAllImageFromGallery(view.getContext());
             listAlbum = getListAlbum(listImage);
             return null;

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 public class LocalDataManager {
-    private static final String PREF_IMG_FAVOR = "PREF_IMG_FAVOR";
+    private static final String PREF_IMG_FAVORITE = "PREF_IMG_FAVORITE";
 
     private static final String PREF_ALBUM_LIST = "PREF_ALBUM_LIST";
 
@@ -66,8 +66,8 @@ public class LocalDataManager {
     }
 
     public static void setListImg(Set<String> listImg) {
-        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_IMG_FAVOR);
-        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_IMG_FAVOR, listImg);
+        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_IMG_FAVORITE);
+        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_IMG_FAVORITE, listImg);
     }
 
     public static void setAlbumListImgByList(String albumName, List<String> listImg) {
@@ -115,12 +115,12 @@ public class LocalDataManager {
             setListImg.add(i);
         }
 
-        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_IMG_FAVOR);
-        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_IMG_FAVOR, setListImg);
+        LocalDataManager.getInstance().mySharedPreferences.deleteListFavor(PREF_IMG_FAVORITE);
+        LocalDataManager.getInstance().mySharedPreferences.putStringSet(PREF_IMG_FAVORITE, setListImg);
     }
 
     public static List<String> getListImg(){
-        Set<String> strJsonArray = LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_IMG_FAVOR);
+        Set<String> strJsonArray = LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_IMG_FAVORITE);
 
         List<String> listImg = new ArrayList<>();
 
@@ -176,7 +176,7 @@ public class LocalDataManager {
     }
 
     public static Set<String> getListSet(){
-        Set<String> setImg = LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_IMG_FAVOR);
+        Set<String> setImg = LocalDataManager.getInstance().mySharedPreferences.getStringSet(PREF_IMG_FAVORITE);
         return setImg;
     }
 }

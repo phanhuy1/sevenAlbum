@@ -69,7 +69,7 @@ public class FavoriteFragment extends Fragment {
         });
 
         imageListPath = LocalDataManager.getListImg();
-        imgListFavor= LocalDataManager.getListSet();
+        imgListFavor = LocalDataManager.getListSet();
         setRyc();
 
 
@@ -86,7 +86,7 @@ public class FavoriteFragment extends Fragment {
 
     private void eventSearch(@NonNull MenuItem item) {
         androidx.appcompat.widget.SearchView searchView = (androidx.appcompat.widget.SearchView) item.getActionView();
-        searchView.setQueryHint("Type to search");
+        searchView.setQueryHint("Search");
         searchView.setOnQueryTextListener(new androidx.appcompat.widget.SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
@@ -137,17 +137,17 @@ public class FavoriteFragment extends Fragment {
     public void onResume() {
         super.onResume();
         imageListPath = LocalDataManager.getListImg();
-        for(int i=0;i<imageListPath.size();i++) {
-            File file = new File(imageListPath.get(i));
-            if(!file.canRead()) {
-                imageListPath.remove(i);
-            }
-        }
+//        for(int i=0;i<imageListPath.size();i++) {
+//            File file = new File(imageListPath.get(i));
+//            if(!file.canRead()) {
+//                imageListPath.remove(i);
+//            }
+//        }
 
         LocalDataManager.setListImgByList(imageListPath);
         recyclerView.setAdapter(new AlbumElementAdapter(new ArrayList<>(imageListPath)));
-        //FavoriteFragment.MyAsyncTask myAsyncTask = new FavoriteFragment.MyAsyncTask();
-        //myAsyncTask.execute();
+//        FavoriteFragment.MyAsyncTask myAsyncTask = new FavoriteFragment.MyAsyncTask();
+//        myAsyncTask.execute();
     }
 
     private List<Image> getListImgFavor(List<String> imageListUri) {
@@ -168,12 +168,12 @@ public class FavoriteFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             imageListPath = LocalDataManager.getListImg();
-            for(int i=0;i<imageListPath.size();i++) {
-                File file = new File(imageListPath.get(i));
-                if(!file.exists()|| !file.canRead()) {
-                    imageListPath.remove(i);
-                }
-            }
+//            for(int i=0;i<imageListPath.size();i++) {
+//                File file = new File(imageListPath.get(i));
+//                if(!file.exists()|| !file.canRead()) {
+//                    imageListPath.remove(i);
+//                }
+//            }
 
             LocalDataManager.setListImgByList(imageListPath);
             return null;

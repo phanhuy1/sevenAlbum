@@ -250,35 +250,44 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
 
                             public void onClick(DialogInterface dialog, int which) {
 
-                                File scrDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
-                                String scrPath = scrDir.getPath();
-                                if(!scrDir.exists()){
-                                    Toast.makeText(PictureActivity.this, "You haven't created secret album", Toast.LENGTH_SHORT).show();
-                                }
-                                else{
-                                    FileUtility fu = new FileUtility();
-                                    File img = new File(imgPath);
-                                    System.out.println("PicAct imgPath: "+ img.getPath());
-                                    System.out.println("PicAct imgName: " + img.getName());
-                                    if(!(scrPath+File.separator+img.getName()).equals(imgPath)){
-                                        fu.moveFile(imgPath,img.getName(),scrPath);
-                                        Toast.makeText(PictureActivity.this, "Your image is hidden", Toast.LENGTH_SHORT).show();
-                                    }
-                                    else{
+//                                File scrDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
+//                                String scrPath = scrDir.getPath();
+//                                if(!scrDir.exists()){
+//                                    Toast.makeText(PictureActivity.this, "You haven't created secret album", Toast.LENGTH_SHORT).show();
+//                                }
+//                                else{
+//                                    FileUtility fu = new FileUtility();
+//                                    File img = new File(imgPath);
+//                                    System.out.println("PicAct imgPath: "+ img.getPath());
+//                                    System.out.println("PicAct imgName: " + img.getName());
+//                                    if(!(scrPath+File.separator+img.getName()).equals(imgPath)){
+//                                        fu.moveFile(imgPath,img.getName(),scrPath);
+//                                        Toast.makeText(PictureActivity.this, "Your image is hidden", Toast.LENGTH_SHORT).show();
+//                                    }
+//                                    else{
+//
+//                                        File folder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Restore");
+//                                        String outputPath = folder.getPath();
+//                                        File imgFile = new File(img.getPath());
+//                                        File desImgFile = new File(outputPath,imgFile.getName());
+//                                        if(!folder.exists()) {
+//                                            folder.mkdir();
+//                                        }
+//                                        imgFile.renameTo(desImgFile);
+//                                        imgFile.deleteOnExit();
+//                                        desImgFile.getPath();
+//                                        MediaScannerConnection.scanFile(getApplicationContext(), new String[]{outputPath+File.separator+desImgFile.getName()}, null, null);
+//                                    }
+//                                }
+                                Set<String> hiddenList =  LocalDataManager.getListHidden();
 
-                                        File folder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Restore");
-                                        String outputPath = folder.getPath();
-                                        File imgFile = new File(img.getPath());
-                                        File desImgFile = new File(outputPath,imgFile.getName());
-                                        if(!folder.exists()) {
-                                            folder.mkdir();
-                                        }
-                                        imgFile.renameTo(desImgFile);
-                                        imgFile.deleteOnExit();
-                                        desImgFile.getPath();
-                                        MediaScannerConnection.scanFile(getApplicationContext(), new String[]{outputPath+File.separator+desImgFile.getName()}, null, null);
-                                    }
+                                if (hiddenList.contains(imgPath)) {
+                                    hiddenList.remove(imgPath);
+                                } else {
+                                    hiddenList.add(imgPath);
                                 }
+
+                                LocalDataManager.setListHidden(hiddenList);
                                 Intent intentResult = new Intent();
                                 intentResult.putExtra("path_img", imgPath);
                                 setResult(RESULT_OK, intentResult);
@@ -298,13 +307,6 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
                         alert.show();
 
                         break;
-                    case R.id.setWallpaper:
-                        Uri uri_wallpaper = Uri.parse("file://" + thumb);
-                        Intent intent = new Intent(Intent.ACTION_ATTACH_DATA);
-                        intent.addCategory(Intent.CATEGORY_DEFAULT);
-                        intent.setDataAndType(uri_wallpaper, "image/*");
-                        intent.putExtra("mimeType", "image/*");
-                        startActivity(Intent.createChooser(intent, "Set as:"));
                 }
 
                 return true;

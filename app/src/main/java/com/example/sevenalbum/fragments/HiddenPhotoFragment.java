@@ -24,6 +24,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.sevenalbum.R;
 import com.example.sevenalbum.activities.mainActivities.AlbumElementActivity;
+import com.example.sevenalbum.activities.mainActivities.DataManager.LocalDataManager;
 import com.example.sevenalbum.utility.BCrypt;
 import com.example.sevenalbum.utility.FileUtility;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
@@ -39,6 +40,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class HiddenPhotoFragment extends Fragment {
 
@@ -128,26 +130,15 @@ public class HiddenPhotoFragment extends Fragment {
         final  EditText pass_box = new EditText(getContext());
         pass_box.setHint(getView().getResources().getString(R.string.enter_your_password));
         pass_box.setTransformationMethod(new PasswordTransformationMethod());
-        final TextView question = new TextView(getContext());
-        question.setText("Answer this question: "+settings.getString("question",""));
-        final  EditText del_answer = new EditText(getContext());
-        del_answer.setTransformationMethod(new PasswordTransformationMethod());
         linearLayout.addView(pass_box);
-        linearLayout.addView(question);
-        linearLayout.addView(del_answer);
         alert.setTitle("Confirm your action");
         alert.setView(linearLayout);
 
         alert.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 String del_pass_value = pass_box.getText().toString();
-                String del_answer_value = del_answer.getText().toString();
                 if(!BCrypt.checkpw(del_pass_value, password)){
                     Toast.makeText(getActivity(),"Wrong password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(!BCrypt.checkpw(del_answer_value, settings.getString("answer",""))){
-                    Toast.makeText(getActivity(),"Wrong answer", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 File scrDir = new File(secretPath);
@@ -245,7 +236,7 @@ public class HiddenPhotoFragment extends Fragment {
 
     }
 
-    public  void eventEnterPass(){
+    public void eventEnterPass(){
         btnEnterPass.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -287,25 +278,11 @@ public class HiddenPhotoFragment extends Fragment {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         this.getContext().startActivity(intent);
     }
-    public ArrayList<String> getListImg(){
-        File mydir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
-        System.out.println(mydir);
-        if (!mydir.exists())
-        {
-            mydir.mkdirs();
-            Toast.makeText(getActivity(),"Hidden album doesn't exist", Toast.LENGTH_SHORT).show();
-            return null;
+    public ArrayList<String> getListImg() {
+        if (!password.equals("")) {
+            System.out.println("Hello: " + LocalDataManager.getListHidden().toString());
+            return new ArrayList<String>(LocalDataManager.getListHidden());
         }
-        else{
-            ArrayList<String> listPath = new ArrayList<>();
-            File list[] = mydir.listFiles();
-            for(File file:list){
-                if(!file.getName().equals(".nomedia")&&!file.getName().equals("info.txt")) {
-                    listPath.add(file.getPath());
-                }
-            }
-            return listPath;
-        }
-
+        return null;
     }
 }

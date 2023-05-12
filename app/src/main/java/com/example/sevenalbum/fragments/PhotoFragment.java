@@ -153,6 +153,7 @@ public class PhotoFragment extends Fragment {
         super.onResume();
         MyAsyncTask myAsyncTask = new MyAsyncTask();
         myAsyncTask.execute();
+        FindAllImagesFromDevice.refreshAllImages();
     }
 
     @Override

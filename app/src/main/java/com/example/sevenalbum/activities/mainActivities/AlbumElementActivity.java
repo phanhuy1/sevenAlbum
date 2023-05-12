@@ -201,7 +201,7 @@ public class AlbumElementActivity extends AppCompatActivity {
             if (myAlbum != null) {
                 int i = 0;
                 while (i < myAlbum.size()) {
-                    if (!albumListImg.contains(myAlbum.get(i)) || deletedList.contains(myAlbum.get(i))) {
+                    if (isSecret != 1 && (!albumListImg.contains(myAlbum.get(i)) || deletedList.contains(myAlbum.get(i)))) {
                         myAlbum.remove(i);
                     }
                     else {

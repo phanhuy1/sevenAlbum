@@ -16,8 +16,8 @@
         android:title="@string/hide_photo"
         app:showAsAction="never"/>
 
-    <item android:id="@+id/setWallpaper"
-        android:title="@string/set_wallpaper"
-        app:showAsAction="never"/>
+<!--    <item android:id="@+id/setWallpaper"-->
+<!--        android:title="@string/set_wallpaper"-->
+<!--        app:showAsAction="never"/>-->
 
 </menu>

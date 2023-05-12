@@ -47,7 +47,6 @@ public class FindAllImagesFromDevice {
     public static final List<Image> getAllImageFromGallery(Context context) {
         Log.d("Seven-Album","FindAllImagesFromDevice->FindAllImagesFromDevice()");
         Set<String> deletedList = LocalDataManager.getListDeleted();
-        System.out.println("Hello " + deletedList.toString());
         if(!allImagesPresent) {
             Uri uri;
             Cursor cursor;
