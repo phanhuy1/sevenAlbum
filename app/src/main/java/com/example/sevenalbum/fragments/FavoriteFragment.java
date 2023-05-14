@@ -160,12 +160,6 @@ public class FavoriteFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             imageListPath = LocalDataManager.getListImg();
-//            for(int i=0;i<imageListPath.size();i++) {
-//                File file = new File(imageListPath.get(i));
-//                if(!file.exists()|| !file.canRead()) {
-//                    imageListPath.remove(i);
-//                }
-//            }
 
             LocalDataManager.setListImgByList(imageListPath);
             return null;

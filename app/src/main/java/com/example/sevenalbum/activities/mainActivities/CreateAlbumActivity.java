@@ -76,12 +76,6 @@ public class CreateAlbumActivity extends AppCompatActivity implements ItemSelect
         });
     }
 
-    /*private void action() {
-        Intent intent = new Intent(this, SlideShowActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }*/
-
     private void setViewRyc() {
         listImage = FindAllImagesFromDevice.getAllImageFromGallery(this);
         ImageSelectAdapter imageAdapter = new ImageSelectAdapter(this);
