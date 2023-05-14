@@ -285,7 +285,6 @@ public class HiddenPhotoFragment extends Fragment {
     }
     public ArrayList<String> getListImg() {
         if (!password.equals("")) {
-            System.out.println("Hello: " + LocalDataManager.getListHidden().toString());
             return new ArrayList<String>(LocalDataManager.getListHidden());
         }
         return null;

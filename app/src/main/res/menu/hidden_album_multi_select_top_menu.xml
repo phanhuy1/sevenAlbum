@@ -7,5 +7,6 @@
         app:showAsAction="never"/>
     <item android:id="@+id/menu_restore"
         android:title="@string/restore"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:visible="false"/>
 </menu>

@@ -231,12 +231,6 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
             public boolean onMenuItemClick(MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 switch (id) {
-//                    case R.id.menuInfo:
-//                        Uri targetUri = Uri.parse("file://" + thumb);
-//                        if (targetUri != null) {
-//                            showExif(targetUri);
-//                        }
-//                        break;
                     case R.id.menuAddAlbum:
                         openBottomDialog();
                         break;
