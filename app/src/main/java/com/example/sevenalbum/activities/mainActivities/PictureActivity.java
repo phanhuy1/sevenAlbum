@@ -249,42 +249,15 @@ public class PictureActivity extends AppCompatActivity implements ImageInterface
                         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
                             public void onClick(DialogInterface dialog, int which) {
-
-//                                File scrDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ".secret");
-//                                String scrPath = scrDir.getPath();
-//                                if(!scrDir.exists()){
-//                                    Toast.makeText(PictureActivity.this, "You haven't created secret album", Toast.LENGTH_SHORT).show();
-//                                }
-//                                else{
-//                                    FileUtility fu = new FileUtility();
-//                                    File img = new File(imgPath);
-//                                    System.out.println("PicAct imgPath: "+ img.getPath());
-//                                    System.out.println("PicAct imgName: " + img.getName());
-//                                    if(!(scrPath+File.separator+img.getName()).equals(imgPath)){
-//                                        fu.moveFile(imgPath,img.getName(),scrPath);
-//                                        Toast.makeText(PictureActivity.this, "Your image is hidden", Toast.LENGTH_SHORT).show();
-//                                    }
-//                                    else{
-//
-//                                        File folder = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM), "Restore");
-//                                        String outputPath = folder.getPath();
-//                                        File imgFile = new File(img.getPath());
-//                                        File desImgFile = new File(outputPath,imgFile.getName());
-//                                        if(!folder.exists()) {
-//                                            folder.mkdir();
-//                                        }
-//                                        imgFile.renameTo(desImgFile);
-//                                        imgFile.deleteOnExit();
-//                                        desImgFile.getPath();
-//                                        MediaScannerConnection.scanFile(getApplicationContext(), new String[]{outputPath+File.separator+desImgFile.getName()}, null, null);
-//                                    }
-//                                }
                                 Set<String> hiddenList =  LocalDataManager.getListHidden();
 
                                 if (hiddenList.contains(imgPath)) {
                                     hiddenList.remove(imgPath);
                                 } else {
                                     hiddenList.add(imgPath);
+                                    Set<String> favoriteList = LocalDataManager.getListSet();
+                                    favoriteList.remove(imgPath);
+                                    LocalDataManager.setListImg(favoriteList);
                                 }
 
                                 LocalDataManager.setListHidden(hiddenList);

@@ -137,17 +137,9 @@ public class FavoriteFragment extends Fragment {
     public void onResume() {
         super.onResume();
         imageListPath = LocalDataManager.getListImg();
-//        for(int i=0;i<imageListPath.size();i++) {
-//            File file = new File(imageListPath.get(i));
-//            if(!file.canRead()) {
-//                imageListPath.remove(i);
-//            }
-//        }
 
         LocalDataManager.setListImgByList(imageListPath);
         recyclerView.setAdapter(new AlbumElementAdapter(new ArrayList<>(imageListPath)));
-//        FavoriteFragment.MyAsyncTask myAsyncTask = new FavoriteFragment.MyAsyncTask();
-//        myAsyncTask.execute();
     }
 
     private List<Image> getListImgFavor(List<String> imageListUri) {

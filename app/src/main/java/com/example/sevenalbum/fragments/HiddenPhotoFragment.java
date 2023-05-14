@@ -41,6 +41,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class HiddenPhotoFragment extends Fragment {
 
@@ -150,6 +152,9 @@ public class HiddenPhotoFragment extends Fragment {
                     editor.apply();
                     enterPassView.setVisibility(View.INVISIBLE);
                     createPassView.setVisibility(View.VISIBLE);
+
+                    LocalDataManager.setListHidden(new HashSet<String>());
+
                     Toast.makeText(getActivity(),"Delete secret success", Toast.LENGTH_SHORT).show();
                 }
                 else{
