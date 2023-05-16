@@ -143,7 +143,7 @@ public class HiddenPhotoFragment extends Fragment {
                     Toast.makeText(getActivity(),"Wrong password", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(password.equals("")){
+                if(!password.equals("")){
                     SharedPreferences.Editor editor = settings.edit();
                     editor.putString("password","");
                     editor.apply();
